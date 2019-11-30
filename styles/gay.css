@@ -6,22 +6,21 @@
 /* Style the rainbow text element. */
 .rainbow-text {
     /* Fallback: create a linear gradient. */
-    background-color: var(--red);
+    background-color: var(--orange);
         
     /* Create a conic gradient. */
     /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-    /* background-image: conic-gradient(
+    background-image: linear-gradient(
+        var(--purple) 16.666%, 
         var(--red) 16.666%, 
-        var(--orange) 16.666%, 
+        var(--red) 33.333%, 
         var(--orange) 33.333%, 
-        var(--yellow) 33.333%, 
+        var(--orange) 50%, 
         var(--yellow) 50%, 
-        var(--green) 50%, 
+        var(--yellow) 66.666%, 
         var(--green) 66.666%, 
-        var(--blue) 66.666%, 
-        var(--blue) 83.333%, 
-        var(--purple) 83.333%); */
-
+        var(--green) 83.333%, 
+        var(--blue) 83.333%);
     background-image: conic-gradient(
         var(--purple) 16.666%, 
         var(--red) 16.666%, 

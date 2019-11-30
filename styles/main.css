@@ -69,7 +69,10 @@ header p#full-name {
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 1.15em;
+}
 
+header p#full-name a, header p#contact-email a {
+    text-decoration: none;
 }
 
 header p#contact-email {
