@@ -1,0 +1,16 @@
+:root {
+    --red: #CA4246;
+    --orange: #E16541;
+    --yellow: #F18F43;
+    --green: #8B9862;
+    --blue: #476098;
+    --purple: #A7489B;
+
+    --body-background-color: #f5f4f4;
+    --text-color: #5a24c2; 
+    --text-color-transparent: rgba(90,36,195, 0.2);
+    --text-color-blocks: #401593; 
+
+    --main-text-width: 666px;
+    --main-text-width-wide: 900px;
+}

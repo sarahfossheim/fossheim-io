@@ -1,0 +1,467 @@
+
+
+/*
+ * Note to self: Improve copywriting.
+ * Note to self: Make pride mode 🏳️‍🌈, bright mode 🌞 and night mode 🌒. 
+ */
+
+/* TODO: Clean up gay hover effects. */
+/* TODO: Gay fallbacks. */
+
+/* Reset default padding and margins .*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Set the default font and color for the body. */
+body {
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+
+    font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 24px;
+}
+
+/* Style the selected text and elements. */
+::selection{
+    background-color: var(--orange);
+    color: var(--body-background-color);
+}
+
+/* Global elements. */
+strong {
+    font-weight: 600;
+}
+
+/* Set the size and position of the header. */
+header {   
+    background-color: var(--body-background-color);
+    box-sizing: border-box;
+    display: block;
+
+    width: 80vw;
+    max-width: var(--main-text-width-wide); 
+    height: 132px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1;
+}
+
+header p#full-name {
+    display: block;
+    width: 170px;
+
+    margin-top: 30px;
+
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.15em;
+
+}
+
+header p#contact-email {
+    font-weight: 600;
+    width: 230px;
+    transform: rotate(90deg);
+    
+    position: fixed;
+    bottom: 115px;
+    right: -66px;
+}
+
+/* Style the navigation. */
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+    font-size: 0.75em;
+}
+
+nav ul {
+    display: block;
+
+    position: absolute;
+    right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2em;
+
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    width: auto;
+}
+
+nav ul li a:hover {
+    position: relative;
+    /* top: -0.4em;
+    padding-bottom: 0.4em; */
+    animation: hover-animation 1s forwards ease;
+}
+
+nav ul li a:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-image: linear-gradient(
+        45deg,
+        var(--red) 16.666%, 
+        var(--orange) 16.666%, 
+        var(--orange) 33.333%, 
+        var(--yellow) 33.333%, 
+        var(--yellow) 50%, 
+        var(--green) 50%, 
+        var(--green) 66.666%, 
+        var(--blue) 66.666%, 
+        var(--blue) 83.333%, 
+        var(--purple) 83.333%
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    position: absolute;
+    bottom: -0.25em; 
+    right: 0;
+    animation: rainbow-simple-animation-rev 1s ease-out forwards;
+}
+
+/* Set the main container. */
+main {
+    width: 80vw;
+    max-width: var(--main-text-width);
+    font-size: 1em;
+    line-height: 1.25em;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 450px;
+    margin-bottom: 4em;
+}
+
+main h1 {
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin-bottom: 1.5em;
+}
+
+main h1 span {
+    font-size: 0.5em;
+    text-transform: uppercase;
+}
+
+main h2 {
+    line-height: 1.25em;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+main h2 a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+main p {
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    color: var(--text-color);
+}
+
+main p a, footer p a {
+    position: relative;
+    color: var(--text-color-blocks);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color-blocks);
+    transition: 0.5s;
+}
+
+main p a:hover, footer p a:hover {
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+main p a:hover:after, footer p a:hover:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(
+        45deg,
+        var(--red) 16.666%, 
+        var(--orange) 16.666%, 
+        var(--orange) 33.333%, 
+        var(--yellow) 33.333%, 
+        var(--yellow) 50%, 
+        var(--green) 50%, 
+        var(--green) 66.666%, 
+        var(--blue) 66.666%, 
+        var(--blue) 83.333%, 
+        var(--purple) 83.333%
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    animation: rainbow-simple-animation-rev 0.5s ease-out forwards;
+}
+
+main p#location {
+    margin-top: 3em;
+    font-size: 0.75em;
+}
+
+main#writing h1 {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    opacity: 0.75;
+    margin-top: -5.4em;
+}
+
+main#writing .posts-list-item {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--text-color-transparent);
+    position: relative
+}
+
+main#writing .posts-list-item:last-child {
+    border-bottom: none;
+}
+
+/* main#writing .posts-list-item a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+main#writing .posts-list-item a {
+    text-decoration: underline;
+}
+
+main#writing .posts-list-item a:hover {
+    text-decoration: none;
+}
+
+main#writing .posts-list-item p {
+    color: var(--text-color);
+    margin-bottom: 0;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+main#writing .posts-list-item p.categories {
+    font-size: 0.58em;
+}
+
+main#writing .posts-list-item p span {
+    margin-right: 1em;
+}
+
+main#writing .posts-list-item h2 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+main#post pre, main#post iframe, main#post img {
+    margin-bottom: 1.5em;
+}
+
+main#post pre {
+    overflow-x: scroll;
+    color: var(--text-color-blocks);
+    background-color: #ece3e1;
+
+    width: 100%;
+    width: var(--main-text-width-wide);
+    position: relative;
+    left: -117px;
+    padding: 1em 1.5em;
+    box-sizing: border-box;
+}
+
+main#post pre code {
+    font-size: 0.75em;
+    /*white-space: pre-wrap;*/
+}
+
+main#post .wide {
+    width: 100%;
+    width: var(--main-text-width-wide);
+    position: relative;
+    left: -117px;
+    padding: 0;
+}
+
+main#post h2, main#post h3, main#post h4, main#post h5 {
+    font-weight: 600;
+}
+
+main#post h2 {
+    font-size: 1.35em;
+}
+
+/* Footer. */
+footer {
+    display: block;
+    width: var(--main-text-width-wide);
+    max-width: 90vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    font-size: 0.75em;
+
+    border-top: var(--text-color-transparent) 1px solid;
+    overflow: hidden;
+}
+
+footer section:first-child {
+    text-align: left;
+    float: left;
+    width: 25%;
+}
+
+footer section:last-child {
+    float: right;
+    text-align: right;
+    width: 25%;
+}
+
+footer section ul li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1048px) {
+    header p#contact-email {
+        right: -90px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    main#post .wide, main#post pre  {
+        width: 100%;
+        left: 0;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header p#contact-email {
+        display: none;
+    }
+
+    header p#full-name {
+        font-size: 1.5em;
+        width: 170px;
+        margin-left: 0vw;
+        z-index: 1;
+        position: relative;
+    }
+
+    main#post .wide {
+        width: 80vw;
+        max-width: var(--main-text-width);
+        position: relative;
+        
+    }
+
+    main#post pre {
+        width: 80vw;
+        max-width: var(--main-text-width);
+        position: static;
+        left: 0;
+    }
+
+    header {
+        position: absolute;
+        top: 0em;
+        left: 0;
+        width: 80%;
+    }
+
+    nav {
+        padding-top: 1.5em;
+        width: 100%;
+        height: 182px;
+        position: absolute;
+        right: 0;
+
+        z-index: 0;
+    }
+    nav ul  {
+        right: 0;  
+    }
+    nav ul li {
+        margin-left: 0;
+        text-align: right;
+        margin-bottom: 0.5em;
+        font-size: 1.25em;
+        display: block;
+        width: auto;
+    }
+
+    main {
+        margin-top: 380px;
+    }
+
+    footer section:first-child {
+        text-align: left;
+        width: 66%;
+        float: none;
+    }
+    
+    footer section:last-child {
+        float: none;
+        text-align: left;
+        width: 66%;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    main#post .wide, main#post pre {
+        width: 100vw;
+        position: relative;
+        left: -10vw;
+    }
+
+    main#post pre {
+        font-size: 0.8em;
+    }
+}

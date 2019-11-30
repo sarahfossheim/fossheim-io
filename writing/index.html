@@ -1,0 +1,30 @@
+---
+layout: layout.liquid
+pageTitle: All posts
+pageId: writing
+---
+
+{% if collections.posts.length > 0 %}
+    {% assign sorted_posts = collections.posts | reverse %}
+    {% for post in sorted_posts %}
+        <section class="posts-list-item">
+            <p>
+                {{post.data.date}}
+            </p>
+            <h2>
+                <a href="{{post.url}}">
+                    {{post.data.pageTitle}}
+                </a>
+            </h2>
+            <p class="categories">
+                {% for cat in post.data.categories %}
+                    <span>
+                        {{cat}}
+                    </span>
+                {% endfor %}
+            </p>
+        </section>
+    {% endfor %}
+{% else %}
+    <p>No posts to show yet 😭</p>
+{% endif %}
