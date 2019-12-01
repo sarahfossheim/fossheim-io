@@ -152,30 +152,6 @@
     }
 }
 
-
-@supports not (background-image: conic-gradient(red, blue)) {
-    .rainbow-text {
-        background-image: linear-gradient(
-        45deg,
-        var(--red) 16.666%, 
-        var(--orange) 16.666%, 
-        var(--orange) 33.333%, 
-        var(--yellow) 33.333%, 
-        var(--yellow) 50%, 
-        var(--green) 50%, 
-        var(--green) 66.666%, 
-        var(--blue) 66.666%, 
-        var(--blue) 83.333%, 
-        var(--purple) 83.333%);
-
-        animation: rainbow-text-fallback-animation-rev 0.75s ease-in forwards;
-    }
-
-    .rainbow-text:hover {
-        animation: rainbow-text-fallback-animation 0.5s ease-in forwards;
-    }
-}
-
 /* Move the background and make it larger. */
 /* Animation shown when hovering over the text. */
 @keyframes rainbow-text-simple-animation {
@@ -217,6 +193,34 @@
     }
 }
 
+/* ================================================ */
+/* ================== FALLBACKS =================== */
+/* ================================================ */
+
+/* Add a linear gradient fallback when not . */
+@supports not (background-image: conic-gradient(red, blue)) {
+    .rainbow-text {
+        background-image: linear-gradient(
+        45deg,
+        var(--red) 16.666%, 
+        var(--orange) 16.666%, 
+        var(--orange) 33.333%, 
+        var(--yellow) 33.333%, 
+        var(--yellow) 50%, 
+        var(--green) 50%, 
+        var(--green) 66.666%, 
+        var(--blue) 66.666%, 
+        var(--blue) 83.333%, 
+        var(--purple) 83.333%);
+
+        animation: rainbow-text-fallback-animation-rev 0.75s ease-in forwards;
+    }
+
+    .rainbow-text:hover {
+        animation: rainbow-text-fallback-animation 0.5s ease-in forwards;
+    }
+}
+
 /* Move the background and make it smaller. */
 /* Animation shown when entering the page and after the hover animation. */
 @keyframes rainbow-text-fallback-animation-rev {
@@ -244,3 +248,41 @@
         background-size: 650%;
     }
 }
+
+/* !HACK! Change conic-gradient size in safari. */
+_::-webkit-full-page-media, _:future, :root .rainbow-text {
+    animation: rainbow-text-safari-animation-rev 0.75s ease forwards;
+}
+
+_::-webkit-full-page-media, _:future, :root .rainbow-text:hover {
+    animation: rainbow-text-safari-animation 0.75s ease forwards;
+}
+
+@keyframes rainbow-text-safari-animation {
+    0% {
+        background-size: 90%;
+        background-position: 0 0;
+    }
+    40% {
+        background-size: 130%;
+    }
+    100% {
+        background-size: 650%;
+        background-position: 90% 80%;
+    }
+}
+
+@keyframes rainbow-text-safari-animation-rev {
+    0% {
+        background-size: 500%;
+        background-position: 120% 1em;
+    }
+    40% {
+        background-position: 100% 2em;
+    }
+    100% {
+        background-size: 90%;
+        background-position: -2% 0;
+    }
+}
+
