@@ -4,7 +4,7 @@ categories: ['Python', 'tutorial']
 date: '2019-12-01'
 ---
 
-I've been really excited to work on the [advent of code](https://adventofcode.com/) challenges this year again. If you don't know the concept, it's basically a advent calendar with programming puzzles that gradually get more difficult. Each day has two challenges that are related to eachother, and they can be solved using any coding language or software.
+I've been really excited to work on the [advent of code](https://adventofcode.com/) challenges this year again. If you don't know the concept, it's basically an advent calendar with programming puzzles that gradually get more difficult. Each day has two challenges that are related to each other, and they can be solved using any coding language or software.
 
 While I'm not planning to compete for points in any leaderboard, my goal for this year is to solve as many of the puzzles as possible and explain my solutions for some of the fun ones on here. I'll mainly be using Python.
 
