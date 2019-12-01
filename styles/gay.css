@@ -7,20 +7,22 @@
 .rainbow-text {
     /* Fallback: create a linear gradient. */
     background-color: var(--orange);
+
+    background-image: linear-gradient(
+        45deg,
+        var(--red) 16.666%, 
+        var(--orange) 16.666%, 
+        var(--orange) 33.333%, 
+        var(--yellow) 33.333%, 
+        var(--yellow) 50%, 
+        var(--green) 50%, 
+        var(--green) 66.666%, 
+        var(--blue) 66.666%, 
+        var(--blue) 83.333%, 
+        var(--purple) 83.333%);
         
     /* Create a conic gradient. */
     /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-    background-image: linear-gradient(
-        var(--purple) 16.666%, 
-        var(--red) 16.666%, 
-        var(--red) 33.333%, 
-        var(--orange) 33.333%, 
-        var(--orange) 50%, 
-        var(--yellow) 50%, 
-        var(--yellow) 66.666%, 
-        var(--green) 66.666%, 
-        var(--green) 83.333%, 
-        var(--blue) 83.333%);
     background-image: conic-gradient(
         var(--purple) 16.666%, 
         var(--red) 16.666%, 
@@ -31,7 +33,7 @@
         var(--yellow) 66.666%, 
         var(--green) 66.666%, 
         var(--green) 83.333%, 
-        var(--blue) 83.333%);
+        var(--blue) 83.333%); 
 
     /* Set thee background size and repeat properties. */
     background-size: 33%;
@@ -42,7 +44,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
-    -moz-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
 
     /* Animate the text when loading the element. */
     /* This animates it on page load and when hovering out. */
@@ -150,6 +152,30 @@
     }
 }
 
+
+@supports not (background-image: conic-gradient(red, blue)) {
+    .rainbow-text {
+        background-image: linear-gradient(
+        45deg,
+        var(--red) 16.666%, 
+        var(--orange) 16.666%, 
+        var(--orange) 33.333%, 
+        var(--yellow) 33.333%, 
+        var(--yellow) 50%, 
+        var(--green) 50%, 
+        var(--green) 66.666%, 
+        var(--blue) 66.666%, 
+        var(--blue) 83.333%, 
+        var(--purple) 83.333%);
+
+        animation: rainbow-text-fallback-animation-rev 0.75s ease-in forwards;
+    }
+
+    .rainbow-text:hover {
+        animation: rainbow-text-fallback-animation 0.5s ease-in forwards;
+    }
+}
+
 /* Move the background and make it larger. */
 /* Animation shown when hovering over the text. */
 @keyframes rainbow-text-simple-animation {
@@ -188,5 +214,33 @@
     100% {
         background-size: 100%;
         background-position: 0 0;
+    }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-fallback-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 60%;
+    }
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-fallback-animation {
+    0% {
+        background-size: 60%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
     }
 }
