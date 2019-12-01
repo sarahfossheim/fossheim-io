@@ -305,7 +305,7 @@ main#post pre, main#post iframe, main#post img {
 main#post pre {
     overflow-x: scroll;
     color: var(--text-color-blocks);
-    background-color: #ece3e1;
+    background-color: var(--code-block-bg);
 
     width: 100%;
     width: var(--main-text-width-wide);
@@ -330,10 +330,19 @@ main#post .wide {
 
 main#post h2, main#post h3, main#post h4, main#post h5 {
     font-weight: 600;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
 }
 
 main#post h2 {
     font-size: 1.35em;
+}
+
+main#post p code {
+    background-color: var(--code-block-bg);
+    color: var(--text-color-blocks);
+    font-size: 0.75em;
+    padding: 0.25em;
 }
 
 /* Footer. */
