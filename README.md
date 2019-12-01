@@ -3,11 +3,12 @@
 New personal website, built on top of Eleventy.
 
 ## Todo:
-- [ ] Accessibility checks _(currently tested with VoiceOver + contrast/colorblind checker)_
+
+- [ ] Accessibility checks
 - [ ] Cross-browser testing
-- [ ] Minor bugfixes
+- [ ] Minor bugfixes
 - [ ] Code cleanup
-- [ ] Night Mode
+- [ ] Night Mode
 - [ ] ...
 
 ## How to run
