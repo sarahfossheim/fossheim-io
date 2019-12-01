@@ -3,11 +3,12 @@
 New personal website, built on top of Eleventy.
 
 ## Todo:
-[] Accessibility checks
-[] Cross-browser testing
-[] Minor bugfixes
-[] Night Mode
-[] ...
+- [ ] Accessibility checks _(currently tested with VoiceOver + contrast/colorblind checker)_
+- [ ] Cross-browser testing
+- [ ] Minor bugfixes
+- [ ] Code cleanup
+- [ ] Night Mode
+- [ ] ...
 
 ## How to run
 1. `npm install`
