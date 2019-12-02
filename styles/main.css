@@ -338,11 +338,16 @@ main#post h2 {
     font-size: 1.35em;
 }
 
-main#post p code {
+main#post *:not(pre) code {
     background-color: var(--code-block-bg);
     color: var(--text-color-blocks);
     font-size: 0.75em;
     padding: 0.25em;
+}
+
+main#post ul {
+    margin-bottom: 1.5em;
+    list-style-position: inside;
 }
 
 /* Footer. */
