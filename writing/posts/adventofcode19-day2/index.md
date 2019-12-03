@@ -20,7 +20,7 @@ The next two numbers give the position in the array of the two numbers we have t
 
 We will have to go through the list in blocks of four. There are different ways of doing this, but for this example we'll use a for-loop:
 
-```
+```python
 for index in range(0, len(arr), 4):
     # Do the calculations here
 ```
@@ -29,7 +29,7 @@ This will loop through the entire array, increasing the index by 4 with each loo
 
 Now, we can easily extract the next pieces of information. The operator is always on the first position of the sequence, and the two next items will tell us **the position in the array** of the two numbers we'll use.
 
-```
+```python
 operator = arr[index]
 numberA = arr[arr[index + 1]]
 numberB = arr[arr[index + 2]]
@@ -37,7 +37,7 @@ numberB = arr[arr[index + 2]]
 
 Now we can use an if-elif statement to perform the correct calculations, and assign the output to the correct position in the array. 
 
-```
+```python
     if operator == 99:
         return arr[0]
     elif operator == 1:
@@ -50,7 +50,7 @@ If we run this on the examples provided in the puzzle, it should give us the rig
 
 However, we're not completely done with part 1 yet. The puzzle also mentions that we have to `replace position 1 with the value 12 and replace position 2 with the value 2` before running the program. If we include this before our for-loop, our program is finished and will work for the provided input sequence:
 
-```
+```python
 arr[1] = 12
 arr[2] = 2
 
@@ -78,7 +78,7 @@ We can largely re-use the same code as in part 2, and wrap it inside two for-loo
 
 To make things more readable, I also moved the code from part 1 in a function:
 
-```
+```python
 def process_array(input_arr):
     arr = input_arr[:]
     # Part 1 for-loop
@@ -89,7 +89,7 @@ I also made a shallow copy of the input array. T*his is because we'll be looping
 
 The rest is pretty straight-forward. We'll nest two loops, one for the noun and the other one for the verb, assign the noun to `arr[1]` and the verb to `arr[2]` and then call our `process_array` function.
 
-```
+```python
 for noun in range(100):
     for verb in range(100):
         input_arr[1] = noun
@@ -100,7 +100,7 @@ for noun in range(100):
 
 Then the only thing that's left to do is stop or loop if the output equals `19690720`, and put them inside of our formula.
 
-```
+```python
 for noun in range(100):
     for verb in range(100):
         input_arr[1] = noun

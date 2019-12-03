@@ -18,7 +18,7 @@ In today's puzzle, we get one input file which contains the mass of modules on a
 
 I solved part 1 in ~~one~~ two lines of code:
 
-```
+```python
 input = np.array([input])
 output = np.sum(np.floor(input / 3) - 2)
 ```
@@ -37,7 +37,7 @@ In short, for each module we'll have to keep repearting the same formula until w
 
 First, we create an array from the input file that the advent of code website provided. Then, we create a new value for the total fuel, which equals zero for now.
 
-```
+```python
 input_array = [...]
 total_fuel = 0
 ```
@@ -46,7 +46,7 @@ This time I did decide to go for a for-loop, although I'm looking for a way of s
 
 For each module, we want to calculate the amount of fuel needed _(and the amount of fuel needed for the fuel, and the amount of fuel needed for that fuel, and so on)_ until we reach 0. We can solve this part with a while-loop. 
 
-```
+```python
 for module in input_array:
     while True:
         // calculate the amount of fuel needed
@@ -58,13 +58,13 @@ for module in input_array:
 
 Now the calculation part. This will be similar to the first part, since we're using the same formula:
 
-```
+```python
 new_fuel = np.floor(new_fuel / 3) - 2
 ```
 
 Then the only thing left to do is adding the `new_fuel` to the `total_fuel` if it's a positive number.
 
-```
+```python
 for module in input_array:
     new_fuel = mod
     while True:
