@@ -71,5 +71,5 @@ render(){
 
 ## Expanding on this
 
-Now we that we have the basics in place, we can also expand on this logic, and add more functionality inside `SplitText`, for example custom class names or conditional styling. I will make a second tutorial, where we'll go more into depth and look at a couple of examples
+Now we that we have the basics in place, we can also expand on this logic, and add more functionality inside `SplitText`, for example custom class names or conditional styling. I will make a second tutorial, where we'll go more into depth and look at a couple of examples.
 
