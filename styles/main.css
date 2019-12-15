@@ -345,9 +345,13 @@ main#post *:not(pre) code {
     padding: 0.25em;
 }
 
-main#post ul {
+main#post ul, main#post ol {
     margin-bottom: 1.5em;
-    list-style-position: inside;
+    margin-left: 1em;
+}
+
+main#post ul li, main#post ol li {
+    margin-bottom: 0.5em;
 }
 
 /* Footer. */
