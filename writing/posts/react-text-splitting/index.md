@@ -5,7 +5,7 @@ date: '2019-12-15'
 categories: ['react', 'front-end', 'tutorial']
 ---
 
-Recently I needed to animate the individual characters in a heading element. I was hoping there would be a convenient css-only solution, similar to `:nth-element(i)` , but unfortunately that doesn't exist. So I decided to research how to achieve something similar, and accessible, nonetheless.
+Recently I needed to animate the individual characters in a heading element. I was hoping there would be a convenient css-only solution, similar to `:nth-child(i)` , but unfortunately that doesn't exist. So I decided to research how to achieve something similar, and accessible, nonetheless.
 
 ## HTML
 
