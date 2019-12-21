@@ -189,13 +189,13 @@ main h2 a {
     text-decoration: none;
 }
 
-main p {
+main p, main ul li {
     font-weight: 400;
     margin-bottom: 1.5em;
-    color: var(--text-color);
+    color: var(--text-color-blocks);
 }
 
-main p a, footer p a {
+main p a, main ul li a, footer p a {
     position: relative;
     color: var(--text-color-blocks);
     text-decoration: none;
@@ -203,12 +203,12 @@ main p a, footer p a {
     transition: 0.5s;
 }
 
-main p a:hover, footer p a:hover {
+main p a:hover, main ul li a:hover, footer p a:hover {
     color: var(--orange);
     border-bottom: 1px solid var(--orange);
 }
 
-main p a:hover:after, footer p a:hover:after {
+main p a:hover:after, main ul li a:hover:after, footer p a:hover:after {
     display: block;
     content: "";
     width: 100%;
