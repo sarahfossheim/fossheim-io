@@ -2,6 +2,9 @@
 pageTitle: 'Tools for designing good-looking accessible interfaces'
 categories: ['design', 'figma', 'accessibility']
 date: '2019-12-21'
+title: 'Tools for designing good-looking accessible interfaces'
+excerpt: "A list of plugins, websites and resources for accessible web design"
+image: "/static/img/a11y-colorblind-menu.png"
 ---
 
 It's important for me that everything I design is both accessible, ethical and user friendly. And to be fair, the three really go hand-in-hand. A product cannot be *friendly* if it's harmful or inaccessible.

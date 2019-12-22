@@ -3,6 +3,8 @@ template: post.liquid
 pageTitle: 'How to style and animate the letters in a string using CSS'
 date: '2019-12-18'
 categories: ['react', 'css', 'front-end', 'tutorial']
+title: 'How to style and animate the letters in a string using CSS'
+excerpt: "Tutorial on how to apply different css styling to different characters in a string."
 ---
 
 Earlier I wrote a [tutorial](/writing/posts/react-text-splitting) on how to split text and render the letters or words as separate spans in React.

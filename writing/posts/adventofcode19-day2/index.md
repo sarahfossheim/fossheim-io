@@ -3,6 +3,8 @@ template: post.liquid
 pageTitle: 'Advent of Code 2019: Day 2 solutions in Python'
 date: '2019-12-02'
 categories: ['python', 'tutorial']
+title: 'Advent Of Code 2019: Day 2 solutions in Python'
+excerpt: "Solutions for the second day of AoC 2019"
 ---
 
 Earlier we solved the [first day](/writing/posts/adventofcode19-day1) of the Advent of Code 2019 challenge. Now, let's take a look at how to solve the second puzzle. 

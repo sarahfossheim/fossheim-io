@@ -2,6 +2,8 @@
 pageTitle: 'Advent Of Code 2019: Day 1 solutions in Python'
 categories: ['Python', 'tutorial']
 date: '2019-12-01'
+title: 'Advent Of Code 2019: Day 1 solutions in Python'
+excerpt: "Solutions for the first day of AoC 2019"
 ---
 
 I've been really excited to work on the [advent of code](https://adventofcode.com/) challenges this year again. If you don't know the concept, it's basically an advent calendar with programming puzzles that gradually get more difficult. Each day has two challenges that are related to each other, and they can be solved using any coding language or software.

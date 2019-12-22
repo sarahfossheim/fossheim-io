@@ -3,6 +3,8 @@ template: post.liquid
 pageTitle: 'Splitting text into individual characters with React'
 date: '2019-12-15'
 categories: ['react', 'front-end', 'tutorial']
+title: 'Splitting text into individual characters with React'
+excerpt: "How to make a reusable and accessible React component to split text."
 ---
 
 Recently I needed to animate the individual characters in a heading element. I was hoping there would be a convenient css-only solution, similar to `:nth-child(i)` , but unfortunately that doesn't exist. So I decided to research how to achieve something similar, and accessible, nonetheless.
