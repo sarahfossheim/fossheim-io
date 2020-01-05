@@ -59,11 +59,11 @@ Instead of using the randomization functionality, you can also paste your own co
 
 The scores get live-updated accordingly, so it's a very easy and user-friendly way of experimenting with different color combinations.
 
-### Khorma
+### Khroma
 
-Another good color generator is [Khorma](http://khroma.co/). It generates an infinite amount of color combinations based on colors you like, and also includes values with regards to the WCAG. 
+Another good color generator is [Khroma](http://khroma.co/). It generates an infinite amount of color combinations based on colors you like, and also includes values with regards to the WCAG. 
 
-<img class="wide" src="/static/img/a11y-khorma.png" tag="Screenshot of Khorma" />
+<img class="wide" src="/static/img/a11y-khorma.png" tag="Screenshot of Khroma" />
 
 They do still show combinations that fail the guidelines, so make sure to always double-check the values in the info panel.
 
