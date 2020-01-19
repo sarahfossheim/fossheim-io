@@ -4,10 +4,10 @@ New personal website, built on top of Eleventy.
 
 ## Todo:
 
-- [ ] Accessibility checks
-- [ ] Cross-browser testing
-- [ ] Minor bugfixes
-- [ ] Code cleanup
+- [X] Accessibility checks
+- [X] Cross-browser testing
+- [X] Minor bugfixes
+- [X] Code cleanup
 - [ ] Night Mode
 - [ ] ...
 
