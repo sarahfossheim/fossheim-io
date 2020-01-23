@@ -354,6 +354,12 @@ main#post ul li, main#post ol li {
     margin-bottom: 0.5em;
 }
 
+main#post hr {
+    margin-bottom: 1em;
+    border: 0;
+    border-top: 1px solid var(--text-color-transparent);
+}
+
 /* Footer. */
 footer {
     display: block;
