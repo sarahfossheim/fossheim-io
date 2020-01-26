@@ -378,16 +378,29 @@ footer {
     overflow: hidden;
 }
 
+/* TODO: Make this a flexbox. */
+footer section {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
 footer section:first-child {
+    width: 25%;
     text-align: left;
     float: left;
-    width: 33%;
 }
 
 footer section:last-child {
+    width: 25%;
     float: right;
     text-align: right;
-    width: 33%;
+}
+
+footer section .pronouns {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.25em;
 }
 
 footer section ul li {
@@ -466,17 +479,22 @@ footer section ul li {
         margin-top: 380px;
     }
 
-    footer section:first-child {
+    footer section {
+        float: none;
         text-align: left;
-        width: 66%;
+        width: 80%;
+        margin-bottom: 2em;
+    }
+
+    footer section:first-child {
+        width: 80%;
         float: none;
     }
     
     footer section:last-child {
         float: none;
         text-align: left;
-        width: 66%;
-        margin-top: 2em;
+        width: 80%;
     }
 }
 
