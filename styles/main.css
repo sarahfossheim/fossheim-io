@@ -479,19 +479,19 @@ footer div ul li {
         margin-top: 380px;
     }
 
-    footer section {
+    footer div {
         float: none;
         text-align: left;
         width: 80%;
         margin-bottom: 2em;
     }
 
-    footer section:first-child {
+    footer div:first-child {
         width: 80%;
         float: none;
     }
     
-    footer section:last-child {
+    footer div:last-child {
         float: none;
         text-align: left;
         width: 80%;
