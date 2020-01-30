@@ -1,12 +1,8 @@
 ---
 layout: layout.liquid
 pageId: front
+pageTitle: "I'm a multidisciplinary developer and designer, with a strong interest in data science, AI, ethics and accessibility."
 ---
-
-<h1>
-    I'm a multidisciplinary developer and designer,
-    with a strong interest in data science, AI, ethics and accessibility.
-</h1>
 
 <p>
     I have over 6 years of experience within full-stack development (specialized in front-end), 

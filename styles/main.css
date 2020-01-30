@@ -379,31 +379,31 @@ footer {
 }
 
 /* TODO: Make this a flexbox. */
-footer section {
+footer div {
     width: 50%;
     float: left;
     text-align: center;
 }
 
-footer section:first-child {
+footer div:first-child {
     width: 25%;
     text-align: left;
     float: left;
 }
 
-footer section:last-child {
+footer div:last-child {
     width: 25%;
     float: right;
     text-align: right;
 }
 
-footer section .pronouns {
+footer div .pronouns {
     font-weight: 800;
     text-transform: uppercase;
     font-size: 1.25em;
 }
 
-footer section ul li {
+footer div ul li {
     list-style-type: none;
 }
 
