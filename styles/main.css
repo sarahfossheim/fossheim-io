@@ -505,6 +505,11 @@ footer div ul li {
         left: -10vw;
     }
 
+    main#post iframe.wide {
+        width: 90vw;
+        left: -5vw;
+    }
+
     main#post pre {
         font-size: 0.8em;
     }
