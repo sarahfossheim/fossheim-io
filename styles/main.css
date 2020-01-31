@@ -317,7 +317,7 @@ main#post pre {
 
 main#post pre code {
     font-size: 0.75em;
-    /*white-space: pre-wrap;*/
+    white-space: pre-wrap;
 }
 
 main#post .wide {
