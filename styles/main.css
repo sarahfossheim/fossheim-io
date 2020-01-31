@@ -499,6 +499,9 @@ footer div ul li {
 }
 
 @media screen and (max-width: 666px) {
+    body {
+        font-size: 22px;
+    }
     main#post .wide, main#post pre {
         width: 100vw;
         position: relative;
@@ -511,6 +514,6 @@ footer div ul li {
     }
 
     main#post pre {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
