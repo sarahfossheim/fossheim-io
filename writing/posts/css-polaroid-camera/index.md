@@ -10,7 +10,7 @@ image: "http://fossheim.io/static/img/css-polaroid-camera.png"
 
 Earlier I remade the design of an [old calculator](https://fossheim.io/writing/posts/showcase-css-abatron803/) entirely in CSS. I had a lot of fun making it, so I decided to do the same with [a Polaroid camera](https://eu.polaroidoriginals.com/products/onestep2-polaroid-camera) this time.
 
-<img class="wide" src="/static/img/css-polaroid-camera.png" tag="End result of the polaroid camera made in css" />
+<img class="wide" src="/static/img/css-polaroid-camera.png" alt="End result of the polaroid camera made in css" />
 
 In this tutorial I'll guide you through my process, and explain how to replicate a physical product in CSS yourself.
 
@@ -298,7 +298,7 @@ A couple of components will need more reflections as well, like the glass inside
 
 **Example: Reflection on the glass of the lens**
 
-<img class="wide" src="/static/img/css-polaroid-reflection.png" tag="Close up of the reflection inside the camera lens in css" />
+<img class="wide" src="/static/img/css-polaroid-reflection.png" alt="Close up of the reflection inside the camera lens in css" />
 
 If we look at the middle, we see I used 4 gradients here:
 
