@@ -353,6 +353,9 @@ main#post ul, main#post ol {
 main#post ul li, main#post ol li {
     margin-bottom: 0.5em;
 }
+main#post ul li ul, main#post ol li ul, main#post ol li ol, main#post ul li ol {
+    margin-top: 0.5em;
+}
 
 main#post hr {
     margin-bottom: 1em;
