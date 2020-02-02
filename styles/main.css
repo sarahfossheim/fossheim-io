@@ -51,7 +51,7 @@ header {
     margin-left: auto;
     margin-right: auto;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -159,10 +159,7 @@ main {
     max-width: var(--main-text-width);
     font-size: var(--text-size-default);
     line-height: 1.25em;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4em;
+    margin: 250px auto 150px auto;
 }
 
 main h1 {
@@ -239,26 +236,25 @@ main p#location {
     font-size: var(--text-size-small);
 }
 
-main#writing h1 {
+#writing main h1 {
     font-size: var(--text-size-small);
     text-transform: uppercase;
     letter-spacing: 0.75px;
     opacity: 0.75;
-    margin-top: -5.4em;
 }
 
-main#writing .posts-list-item {
+#writing main .posts-list-item {
     padding-top: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid var(--text-color-transparent);
     position: relative
 }
 
-main#writing .posts-list-item:last-child {
+#writing main .posts-list-item:last-child {
     border-bottom: none;
 }
 
-/* main#writing .posts-list-item a:after {
+/* #writing main .posts-list-item a:after {
     content: "";
     display: block;
     position: absolute;
@@ -268,15 +264,15 @@ main#writing .posts-list-item:last-child {
     height: 100%;
 } */
 
-main#writing .posts-list-item a {
+#writing main .posts-list-item a {
     text-decoration: underline;
 }
 
-main#writing .posts-list-item a:hover {
+#writing main .posts-list-item a:hover {
     text-decoration: none;
 }
 
-main#writing .posts-list-item p {
+#writing main .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
     font-size: var(--text-size-small);
@@ -284,24 +280,24 @@ main#writing .posts-list-item p {
     font-weight: 600;
 }
 
-main#writing .posts-list-item p.categories {
+#writing main .posts-list-item p.categories {
     font-size: var(--text-size-xsmall);
 }
 
-main#writing .posts-list-item p span {
+#writing main .posts-list-item p span {
     margin-right: 1em;
 }
 
-main#writing .posts-list-item h2 {
+#writing main .posts-list-item h2 {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
-main#post pre, main#post iframe, main#post img {
+#post main pre, #post main iframe, #post main img {
     margin-bottom: 1.5em;
 }
 
-main#post pre {
+#post main pre {
     overflow-x: scroll;
     color: var(--text-color-blocks);
     background-color: var(--code-block-bg);
@@ -314,12 +310,12 @@ main#post pre {
     box-sizing: border-box;
 }
 
-main#post pre code {
+#post main pre code {
     font-size: var(--text-size-small);
     white-space: pre-wrap;
 }
 
-main#post .wide {
+#post main .wide {
     width: 100%;
     width: var(--main-text-width-wide);
     position: relative;
@@ -327,36 +323,36 @@ main#post .wide {
     padding: 0;
 }
 
-main#post h2, main#post h3, main#post h4, main#post h5 {
+#post main h2, #post main h3, #post main h4, #post main h5 {
     font-weight: 600;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
 }
 
-main#post h2 {
+#post main h2 {
     font-size: 1.35em;
 }
 
-main#post *:not(pre) code {
+#post main *:not(pre) code {
     background-color: var(--code-block-bg);
     color: var(--text-color-blocks);
     font-size: var(--text-size-small);
     padding: 0.25em;
 }
 
-main#post ul, main#post ol {
+#post main ul, #post main ol {
     margin-bottom: 1.5em;
     margin-left: 1em;
 }
 
-main#post ul li, main#post ol li {
+#post main ul li, #post main ol li {
     margin-bottom: 0.5em;
 }
-main#post ul li ul, main#post ol li ul, main#post ol li ol, main#post ul li ol {
+#post main ul li ul, #post main ol li ul, #post main ol li ol, #post main ul li ol {
     margin-top: 0.5em;
 }
 
-main#post hr {
+#post main hr {
     margin-bottom: 1em;
     border: 0;
     border-top: 1px solid var(--text-color-transparent);
@@ -416,7 +412,7 @@ footer div ul li {
 }
 
 @media screen and (max-width: 1125px) {
-    main#post .wide, main#post pre  {
+    #post main .wide, #post main pre  {
         width: 100%;
         left: 0;
         position: static;
@@ -436,14 +432,14 @@ footer div ul li {
         position: relative;
     }
 
-    main#post .wide {
+    #post main .wide {
         width: 80vw;
         max-width: var(--main-text-width);
         position: relative;
         
     }
 
-    main#post pre {
+    #post main pre {
         width: 80vw;
         max-width: var(--main-text-width);
         position: static;
@@ -501,18 +497,18 @@ footer div ul li {
 }
 
 @media screen and (max-width: 666px) {
-    main#post .wide, main#post pre {
+    #post main .wide, #post main pre {
         width: 100vw;
         position: relative;
         left: -10vw;
     }
 
-    main#post iframe.wide {
+    #post main iframe.wide {
         width: 90vw;
         left: -5vw;
     }
 
-    main#post pre {
+    #post main pre {
         font-size: var(--text-size-regular);
     }
 }
@@ -527,7 +523,6 @@ footer div ul li {
     line-height: 130px;
     font-weight: 700;
     width: 600px;
-    margin-top: 250px;
     margin-bottom: 75px;
 
     background-size: 580px;
