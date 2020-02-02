@@ -24,7 +24,7 @@ body {
     color: var(--text-color);
 
     font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 24px;
+    font-size: var(--text-size-default);
 }
 
 /* Style the selected text and elements. */
@@ -65,7 +65,7 @@ header p#full-name {
 
     margin-top: 30px;
 
-    font-size: 1.5em;
+    font-size: var(--text-size-large);
     font-weight: 600;
     letter-spacing: 0.5px;
     line-height: 1.15em;
@@ -96,7 +96,7 @@ nav {
     margin-right: auto;
     padding-top: 50px;
 
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
 }
 
 nav ul {
@@ -157,7 +157,7 @@ nav ul li a:hover:after {
 main {
     width: 80vw;
     max-width: var(--main-text-width);
-    font-size: 1em;
+    font-size: var(--text-size-default);
     line-height: 1.25em;
 
     margin-left: auto;
@@ -167,13 +167,13 @@ main {
 
 main h1 {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: var(--text-size-large);
     line-height: 1.25em;
     margin-bottom: 1.5em;
 }
 
 main h1 span {
-    font-size: 0.5em;
+    font-size: var(--text-size-small);
     text-transform: uppercase;
 }
 
@@ -236,11 +236,11 @@ main p a:hover:after, main ul li a:hover:after, main ol li a:hover:after, footer
 
 main p#location {
     margin-top: 3em;
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
 }
 
 main#writing h1 {
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
     text-transform: uppercase;
     letter-spacing: 0.75px;
     opacity: 0.75;
@@ -279,13 +279,13 @@ main#writing .posts-list-item a:hover {
 main#writing .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
     text-transform: uppercase;
     font-weight: 600;
 }
 
 main#writing .posts-list-item p.categories {
-    font-size: 0.58em;
+    font-size: var(--text-size-xsmall);
 }
 
 main#writing .posts-list-item p span {
@@ -315,7 +315,7 @@ main#post pre {
 }
 
 main#post pre code {
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
     white-space: pre-wrap;
 }
 
@@ -340,7 +340,7 @@ main#post h2 {
 main#post *:not(pre) code {
     background-color: var(--code-block-bg);
     color: var(--text-color-blocks);
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
     padding: 0.25em;
 }
 
@@ -374,7 +374,7 @@ footer {
     padding-top: 5em;
     padding-bottom: 5em;
 
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
 
     border-top: var(--text-color-transparent) 1px solid;
     overflow: hidden;
@@ -402,7 +402,7 @@ footer div:last-child {
 footer div .pronouns {
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 28px;
 }
 
 footer div ul li {
@@ -429,7 +429,7 @@ footer div ul li {
     }
 
     header p#full-name {
-        font-size: 1.5em;
+        font-size: var(--text-size-regular);
         width: 170px;
         margin-left: 0vw;
         z-index: 1;
@@ -501,9 +501,6 @@ footer div ul li {
 }
 
 @media screen and (max-width: 666px) {
-    body {
-        font-size: 22px;
-    }
     main#post .wide, main#post pre {
         width: 100vw;
         position: relative;
@@ -516,7 +513,7 @@ footer div ul li {
     }
 
     main#post pre {
-        font-size: 1em;
+        font-size: var(--text-size-regular);
     }
 }
 

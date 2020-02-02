@@ -15,4 +15,9 @@
     --main-text-width-wide: 900px;
 
     --code-block-bg: #ece3e1;
+
+    --text-size-default: 24px;
+    --text-size-large: 36px;
+    --text-size-small: 18px;
+    --text-size-xsmall: 14px;
 }
