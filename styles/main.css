@@ -162,7 +162,6 @@ main {
 
     margin-left: auto;
     margin-right: auto;
-    margin-top: 450px;
     margin-bottom: 4em;
 }
 
@@ -518,5 +517,40 @@ footer div ul li {
 
     main#post pre {
         font-size: 1em;
+    }
+}
+
+
+#front header #full-name {
+    display: none;
+}
+
+#front main h1 {
+    font-size: 125px;
+    line-height: 130px;
+    font-weight: 700;
+    width: 600px;
+    margin-top: 250px;
+    margin-bottom: 75px;
+
+    background-size: 580px;
+}
+
+#front main h2 {
+    font-size: 1.75em;
+    margin-bottom: 1em;
+}
+
+#front main p {
+    color: var(--text-color)
+}
+
+@media screen and (max-width: 750px) {
+    #front main h1 {
+        margin-top: -150px;
+        line-height: 70px;
+        font-size: 60px;
+        width: 300px;
+        background-size: 95%;
     }
 }

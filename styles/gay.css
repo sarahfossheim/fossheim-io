@@ -87,6 +87,32 @@
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
 
+.rainbow-text-static {
+    /* Create a linear gradient. */
+    /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+    background: linear-gradient(
+        60deg,
+        var(--red) 15%, 
+        var(--orange) 15%, 
+        var(--orange) 30%, 
+        var(--yellow) 30%, 
+        var(--yellow) 45%, 
+        var(--green) 45%, 
+        var(--green) 60%, 
+        var(--blue) 60%, 
+        var(--blue) 75%, 
+        var(--purple) 75%);
+
+    /* Set thee background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
 .rainbow-text:hover  {
     animation: rainbow-text-animation 0.5s ease-in forwards;
 }  
