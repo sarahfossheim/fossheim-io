@@ -66,7 +66,7 @@ header p#full-name {
     margin-top: 30px;
 
     font-size: var(--text-size-large);
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.5px;
     line-height: 1.15em;
 }
@@ -76,7 +76,7 @@ header p#full-name a, header p#contact-email a {
 }
 
 header p#contact-email {
-    font-weight: 600;
+    font-weight: 700;
     width: 230px;
     transform: rotate(90deg);
     
@@ -425,7 +425,7 @@ footer div ul li {
     }
 
     header p#full-name {
-        font-size: var(--text-size-regular);
+        font-size: var(--text-size-large);
         width: 170px;
         margin-left: 0vw;
         z-index: 1;
