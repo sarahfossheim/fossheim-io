@@ -86,7 +86,7 @@ header p#contact-email {
 }
 
 /* Style the navigation. */
-nav {
+header nav {
     position: absolute;
     left: 0;
     right: 0;
@@ -99,34 +99,34 @@ nav {
     font-size: var(--text-size-small);
 }
 
-nav ul {
+header nav ul {
     display: block;
 
     position: absolute;
     right: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 2em;
 
     list-style-type: none;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: var(--text-color);
     width: auto;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     position: relative;
     /* top: -0.4em;
     padding-bottom: 0.4em; */
     animation: hover-animation 1s forwards ease;
 }
 
-nav ul li a:hover:after {
+header nav ul li a:hover:after {
     content: "";
     display: block;
     width: 100%;
@@ -453,7 +453,7 @@ footer div ul li {
         width: 80%;
     }
 
-    nav {
+    header nav {
         padding-top: 1.5em;
         width: 100%;
         height: 182px;
@@ -462,10 +462,10 @@ footer div ul li {
 
         z-index: 0;
     }
-    nav ul  {
+    header nav ul  {
         right: 0;  
     }
-    nav ul li {
+    header nav ul li {
         margin-left: 0;
         text-align: right;
         margin-bottom: 0.5em;
