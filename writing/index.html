@@ -1,29 +1,61 @@
 ---
 layout: layout.liquid
-pageTitle: Writing
+pageTitle: 📝 Writing
 pageId: writing
 ---
-
+<div class="posts-block">
 {% if collections.posts.length > 0 %}
-    {% for post in collections.sortedPosts %}
-        <section class="posts-list-item">
+    {% for post in collections.sortedPosts limit:1 %}
+        <section class="posts-latest accessibility">
             <p>
-                {{post.data.date}}
+                Latest Accessibility | {{post.data.date}}
             </p>
             <h2>
                 <a href="{{post.url}}">
                     {{post.data.pageTitle}}
                 </a>
             </h2>
-            <p class="categories">
-                {% for cat in post.data.categories %}
-                    <span>
-                        {{cat}}
-                    </span>
-                {% endfor %}
+        </section>
+    {% endfor %}
+    {% for post in collections.sortedPosts limit:1 %}
+        <section class="posts-latest development">
+            <p>
+                Latest in Development | {{post.data.date}}
             </p>
+            <h2>
+                <a href="{{post.url}}">
+                    {{post.data.pageTitle}}
+                </a>
+            </h2>
+        </section>
+    {% endfor %}
+    {% for post in collections.sortedPosts limit:1 %}
+        <section class="posts-latest design">
+            <p>
+                Latest in Design | {{post.data.date}}
+            </p>
+            <h2>
+                <a href="{{post.url}}">
+                    {{post.data.pageTitle}}
+                </a>
+            </h2>
+        </section>
+    {% endfor %}
+    {% for post in collections.sortedPosts limit:1 %}
+        <section class="posts-latest society">
+            <p>
+                Latest in Society | {{post.data.date}}
+            </p>
+            <h2>
+                <a href="{{post.url}}">
+                    {{post.data.pageTitle}}
+                </a>
+            </h2>
         </section>
     {% endfor %}
 {% else %}
     <p>No posts to show yet 😭</p>
 {% endif %}
+</div>
+
+<p class="archive"><a href="./archive/">See all posts</a> →</p>

@@ -10,6 +10,7 @@
     --text-color: #5a24c2; 
     --text-color-transparent: rgba(90,36,195, 0.2);
     --text-color-blocks: #401593; 
+    --text-color-tags: #270667;
 
     --main-text-width: 666px;
     --main-text-width-wide: 900px;
@@ -20,4 +21,9 @@
     --text-size-large: 36px;
     --text-size-small: 18px;
     --text-size-xsmall: 14px;
+
+    --color-accessibility: #CCE6C9;
+    --color-development: #F3CFCD;
+    --color-design: #EDE389;
+    --color-society: #C7EEEC;
 }

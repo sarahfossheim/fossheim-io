@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -236,43 +237,126 @@ main p#location {
     font-size: var(--text-size-small);
 }
 
+/* ---- FRONT PAGE ---- */
+#front header #full-name {
+    display: none;
+}
+
+#front main h1 {
+    font-size: 125px;
+    line-height: 130px;
+    font-weight: 700;
+    width: 600px;
+    margin-bottom: 75px;
+
+    background-size: 580px;
+}
+
+#front main h2 {
+    font-size: 1.75em;
+    margin-bottom: 1em;
+}
+
+#front main p {
+    color: var(--text-color)
+}
+
+/* ---- WRITING PAGE ---- */
+#writing main {
+    max-width: var(--main-text-width-wide);
+}
+
+#writing main .posts-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#writing main .posts-latest {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 440px;
+    max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
+    background-color: #c1ecd8;
+    border-radius: 3px;
+    padding: var(--text-size-default);
+    margin-bottom: 10px;
+}
+
+#writing main .posts-latest.accessibility {
+    background-color: var(--color-accessibility);
+}
+
+#writing main .posts-latest.development {
+    background-color: var(--color-development);
+}
+
+#writing main .posts-latest.design {
+    background-color: var(--color-design); 
+}
+
+#writing main .posts-latest.society {
+    background-color: var(--color-society);
+}
+
+#writing main .posts-latest p {
+    color: var(--text-color-tags);
+    font-size: var(--text-size-xsmall);
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.75;
+    margin-bottom: 0;
+}
+
+#writing main .posts-latest h2 a {
+    color: var(--text-color-tags);
+}
+
+#writing main .posts-latest h2 {
+    font-size: var(--text-size-default);
+    margin-top: 0;
+}
+
 #writing main h1 {
+    margin-left: 117px;
+}
+
+#writing main p.archive {
+    margin-left: 117px;
+    margin-top: var(--text-size-large);
+}
+
+/* ---- ARCHIVE ---- */
+#writing main h1, #archive main h1 {
     font-size: var(--text-size-small);
     text-transform: uppercase;
     letter-spacing: 0.75px;
     opacity: 0.75;
 }
 
-#writing main .posts-list-item {
+#archive main .posts-list-item {
     padding-top: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid var(--text-color-transparent);
     position: relative
 }
 
-#writing main .posts-list-item:last-child {
+#archive main .posts-list-item:last-child {
     border-bottom: none;
 }
 
-/* #writing main .posts-list-item a:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-} */
-
-#writing main .posts-list-item a {
+#archive main .posts-list-item a {
     text-decoration: underline;
 }
 
-#writing main .posts-list-item a:hover {
+#archive main .posts-list-item a:hover {
     text-decoration: none;
 }
 
-#writing main .posts-list-item p {
+#archive main .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
     font-size: var(--text-size-small);
@@ -280,19 +364,21 @@ main p#location {
     font-weight: 600;
 }
 
-#writing main .posts-list-item p.categories {
+#archive main .posts-list-item p.categories {
     font-size: var(--text-size-xsmall);
 }
 
-#writing main .posts-list-item p span {
+#archive main .posts-list-item p span {
     margin-right: 1em;
 }
 
-#writing main .posts-list-item h2 {
+#archive main .posts-list-item h2 {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
+
+/* ---- POSTS PAGE ---- */
 #post main pre, #post main iframe, #post main img {
     margin-bottom: 1.5em;
 }
@@ -496,6 +582,17 @@ footer div ul li {
     }
 }
 
+@media screen and (max-width: 750px) {
+    #front main h1 {
+        margin-top: -150px;
+        line-height: 70px;
+        font-size: 60px;
+        width: 300px;
+        background-size: 95%;
+    }
+}
+
+
 @media screen and (max-width: 666px) {
     #post main .wide, #post main pre {
         width: 100vw;
@@ -513,40 +610,7 @@ footer div ul li {
     }
 }
 
-
-#front header #full-name {
-    display: none;
-}
-
-#front main h1 {
-    font-size: 125px;
-    line-height: 130px;
-    font-weight: 700;
-    width: 600px;
-    margin-bottom: 75px;
-
-    background-size: 580px;
-}
-
-#front main h2 {
-    font-size: 1.75em;
-    margin-bottom: 1em;
-}
-
-#front main p {
-    color: var(--text-color)
-}
-
-@media screen and (max-width: 750px) {
-    #front main h1 {
-        margin-top: -150px;
-        line-height: 70px;
-        font-size: 60px;
-        width: 300px;
-        background-size: 95%;
-    }
-}
-
+/* To enforce alt tags */
 img:not([alt]) {
     filter: blur(5px);
 }
