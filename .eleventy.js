@@ -10,6 +10,10 @@ module.exports = function(eleventyConfig) {
     url: "https://fossheim.io",
     author: "Sarah L. Fossheim"
   });
+  eleventyConfig.addCollection("sortedPosts", function(collection) {
+    console.log("posts", collection.getFilteredByTag("posts"));
+    return collection.getFilteredByTag("posts").sort((a,b) => b.date - a.date);
+  });
   return {
     passthroughFileCopy: true
   }
