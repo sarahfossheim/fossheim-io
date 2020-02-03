@@ -30,7 +30,7 @@ I also recommend having some pen and paper closeby to sketch out the structure o
 
 First you want to find a high-quality image of the object you're going to recreate. You'll be picking colors and measuring dimensions a lot, so it's important the image has decent quality.
 
-<img class="wide" src="/static/img/css-polaroid-reference.jpg" tag="Reference used to create the polaroid camera" />
+<img class="wide" src="/static/img/css-polaroid-reference.jpg" alt="Reference used to create the polaroid camera" />
 
 This is the one I started off with. As you can see, I also went for an image that was already taken from the same angle and with the same lightning as I wanted my result to be. 
 
@@ -38,7 +38,7 @@ This is the one I started off with. As you can see, I also went for an image tha
 
 Once I decided which image I wanted to work with, I analyzed it and sketched out the basic structure, which will later on be translated into html.
 
-<img class="wide" src="/static/img/css-polaroid-sketch-1.jpg" tag="First sketch of the structure" />
+<img class="wide" src="/static/img/css-polaroid-sketch-1.jpg" alt="First sketch of the structure" />
 
 Keep several things in mind when doing this:
 
@@ -46,7 +46,7 @@ Keep several things in mind when doing this:
 - **Colors and sizing**. The camera's bottom part, where the printer is, is black and slightly wider than the top part. While it's strictly speaking maybe part of the same physical component (the body of the camera), splitting it up into a top and bottom component gives you a lot more flexibility, and makes setting the colors and sizes much easier.
 - **Shadows, highlights and reflections.** Some components will be easier to recreate if you split them up in several subcomponents. For example the lens has some reflections on the glass that aren't visible on the rest of the material. So I split that one up in the physical part that sticks out of the camera, and the glass on top.
 
-<img class="wide" src="/static/img/css-polaroid-sketch-2.jpg" tag="More detailed sketch of a component" />
+<img class="wide" src="/static/img/css-polaroid-sketch-2.jpg" alt="More detailed sketch of a component" />
 
 With this in mind, the structure becomes something like this:
 
@@ -95,7 +95,7 @@ If you're new to gradients in CSS, you probably want to continue with the items 
 
 You want to have the picture open in a program (I used Figma) where you can pick the colors and measure how large each component has to be.
 
-<img class="wide" src="/static/img/css-polaroid-figma.png" tag="Figma file with colors picked for all the gradients" />
+<img class="wide" src="/static/img/css-polaroid-figma.png" alt="Figma file with colors picked for all the gradients" />
 
 The rainbow in the bottom is a good example to illustrate this with. I first drew a rectangle on top of it to measure the width and height, which I then set in the CSS. The same can be done to decide the positioning:
 
@@ -114,7 +114,7 @@ It's best to go for absolute positioning for all components, except for the oute
 
 For the colors, I drew several shapes and used the color picker to get the right color code for each part. For most of the physical components I used gradients rather than flat colors, even if the component looked more or less flat.
 
-<img class="wide" src="/static/img/css-polaroid-picking-color.png" tag="Figma file with colors picked for the rainbow" />
+<img class="wide" src="/static/img/css-polaroid-picking-color.png" alt="Figma file with colors picked for the rainbow" />
 
 For example, the top part of the camera body has three different whites as the base layer. While it's not very noticeable, doing this does give a bit more dimension to the designs.
 
@@ -167,7 +167,7 @@ Now let's take a look at a more complicated component, the flash.
 
 This one has a lot of gradients on top of each other: the background gradient *(white, light gray, black, dark gray, light gray, white)*, the horizontal lines *(transparent, light gray, white, transparent)*, then the vertical lines, and then a white square on the top and bottom. 
 
-<img class="wide" src="/static/img/css-polaroid-picking-color-flash.png" tag="Figma file with colors picked for the flash" />
+<img class="wide" src="/static/img/css-polaroid-picking-color-flash.png" alt="Figma file with colors picked for the flash" />
 
 After selecting the colors for the gradient, we can translate it into CSS like this:
 
@@ -229,7 +229,7 @@ So let's measure the size of the gradient on top, and where the vertical lines s
 
 After adding reflections and shadows (which will be explained in the next section), our flash ends up looking like this:
 
-<img class="wide" src="/static/img/css-polaroid-flash-comparison.png" tag="Comparison of the css flash and the actual flash next to each other" />
+<img class="wide" src="/static/img/css-polaroid-flash-comparison.png" alt="Comparison of the css flash and the actual flash next to each other" />
 
 ### Borders, shadows and highlights
 
