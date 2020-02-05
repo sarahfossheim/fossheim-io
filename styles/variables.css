@@ -14,6 +14,7 @@
 
     --main-text-width: 666px;
     --main-text-width-wide: 900px;
+    --main-container-padding: 117px;
 
     --code-block-bg: #ece3e1;
 
@@ -21,6 +22,8 @@
     --text-size-large: 36px;
     --text-size-small: 18px;
     --text-size-xsmall: 14px;
+    --text-size-medium: 30px;
+
 
     --color-accessibility: #CCE6C9;
     --color-development: #F3CFCD;

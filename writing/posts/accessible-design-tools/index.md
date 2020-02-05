@@ -1,6 +1,7 @@
 ---
 pageTitle: 'Tools for designing good-looking accessible interfaces'
 categories: ['design', 'figma', 'accessibility']
+featured: "accessibility"
 date: '2019-12-21'
 title: 'Tools for designing good-looking accessible interfaces'
 excerpt: "A list of plugins, websites and resources for accessible web design"

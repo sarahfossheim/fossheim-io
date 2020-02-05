@@ -272,6 +272,7 @@ main p#location {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 2em;
 }
 
 #writing main .posts-latest {
@@ -282,7 +283,7 @@ main p#location {
     max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
     background-color: #c1ecd8;
     border-radius: 3px;
-    padding: var(--text-size-default);
+    padding: var(--text-size-large);
     margin-bottom: 10px;
 }
 
@@ -316,7 +317,7 @@ main p#location {
 }
 
 #writing main .posts-latest h2 {
-    font-size: var(--text-size-default);
+    font-size: var(--text-size-medium);
     margin-top: 0;
 }
 
@@ -329,6 +330,41 @@ main p#location {
     margin-top: var(--text-size-large);
 }
 
+#writing main .posts-list-item {
+    margin: 0 117px;
+    margin: 0 calc(calc(var(--main-text-width-wide) - var(--main-text-width)) / 2);
+}
+
+#writing main .posts-list-item h2 {
+    /*font-size: var(--text-size-default);*/
+    font-size: var(--text-size-large);;
+    margin-top: 0em;
+    margin-bottom: 0.25em;
+}
+
+.patreon {
+    display: block;
+    width: var(--main-text-width-wide);
+    border-radius: 3px;
+    background-color: lavender;
+    padding: var(--text-size-large);
+    padding-left: calc(var(--text-size-large) * 3.5);
+    margin: 4em 0 3em 0;
+    background-image: url("/static/icons/patreon.png");
+    background-size: auto 50%;
+    background-position: left var(--text-size-large) center;
+    background-repeat: no-repeat;
+}
+
+.patreon p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+#archive .patreon, #post .patreon {
+    margin-left: -117px !important;
+}
+
 /* ---- ARCHIVE ---- */
 #writing main h1, #archive main h1 {
     font-size: var(--text-size-small);
@@ -337,26 +373,25 @@ main p#location {
     opacity: 0.75;
 }
 
-#archive main .posts-list-item {
-    padding-top: 2em;
-    padding-bottom: 2em;
+#archive main .posts-list-item, #writing main .posts-list-item {
+    padding: 1.5em 0;
     border-bottom: 1px solid var(--text-color-transparent);
-    position: relative
+    position: relative;
 }
 
-#archive main .posts-list-item:last-child {
+#archive main .posts-list-item:last-child, #writing main .posts-list-item:last-child  {
     border-bottom: none;
 }
 
-#archive main .posts-list-item a {
+#archive main .posts-list-item a, #writing main .posts-list-item a {
     text-decoration: underline;
 }
 
-#archive main .posts-list-item a:hover {
+#archive main .posts-list-item a:hover, #writing main .posts-list-item a:hover {
     text-decoration: none;
 }
 
-#archive main .posts-list-item p {
+#archive main .posts-list-item p, #writing main .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
     font-size: var(--text-size-small);
@@ -364,11 +399,11 @@ main p#location {
     font-weight: 600;
 }
 
-#archive main .posts-list-item p.categories {
+#archive main .posts-list-item p.categories, #writing main .posts-list-item p.categories {
     font-size: var(--text-size-xsmall);
 }
 
-#archive main .posts-list-item p span {
+#archive main .posts-list-item p span, #writing main .posts-list-item p span {
     margin-right: 1em;
 }
 
@@ -382,6 +417,7 @@ main p#location {
 #post main pre, #post main iframe, #post main img {
     margin-bottom: 1.5em;
 }
+
 
 #post main pre {
     overflow-x: scroll;

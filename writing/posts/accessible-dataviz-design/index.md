@@ -2,6 +2,7 @@
 pageTitle: 'An intro to designing accessible data visualizations'
 categories: ['design', 'data', 'accessibility']
 date: '2020-01-12'
+featured: "design"
 title: 'An intro to designing accessible data visualizations'
 excerpt: "10 dos and don'ts for designing accessible data visualizations, including real-life examples and resources"
 image: "http://fossheim.io/static/img/a11y-dataviz-overview.png"
