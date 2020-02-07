@@ -11,9 +11,16 @@ pageId: writing
             </p>
             <h2>
                 <a href="{{post.url}}">
-                    {{post.data.pageTitle}} →
+                    {{post.data.pageTitle}}
                 </a>
             </h2>
+            <p class="categories">
+                {% for cat in post.data.categories %}
+                    <span>
+                        {{cat}}
+                    </span>
+                {% endfor %}
+            </p>
         </section>
     {% endfor %}
 </div>

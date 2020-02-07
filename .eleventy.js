@@ -16,7 +16,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("featuredPosts", function(collection){
     return collection.getFilteredByTag("posts").filter((post)=>{
       return post.data.featured;
-    }).sort((a,b) => b.date - a.date);
+    }).sort((a,b) => {
+      console.log(b.data.featured, a.data.featured);
+      const featuredDateA = new Date(a.data.featured);
+      const featuredDateB = new Date(b.data.featured);
+      return featuredDateB - featuredDateA;
+    });
   });
   return {
     passthroughFileCopy: true

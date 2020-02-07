@@ -2,6 +2,7 @@
 template: post.liquid
 pageTitle: 'How to style and animate the letters in a string using CSS'
 date: '2019-12-18'
+featured: '2020-02-04'
 categories: ['react', 'css', 'front-end', 'tutorial']
 title: 'How to style and animate the letters in a string using CSS'
 excerpt: "Tutorial on how to apply different css styling to different characters in a string."

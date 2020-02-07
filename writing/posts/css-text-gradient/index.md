@@ -3,7 +3,7 @@ template: post.liquid
 pageTitle: 'How to add a gradient overlay to text with CSS'
 date: '2020-01-19'
 categories: ['css', 'front-end', 'tutorial']
-featured: '2020-02-07'
+featured: '2020-02-01'
 title: 'How to add a gradient overlay to text with CSS'
 excerpt: "An intro tutorial on how to add gradients to text with CSS, including examples and tips for scalability."
 image: "http://fossheim.io/static/img/css-gradient-fossheimio.png"
