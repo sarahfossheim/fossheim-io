@@ -13,11 +13,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("sortedPosts", function(collection) {
     return collection.getFilteredByTag("posts").sort((a,b) => b.date - a.date);
   });
-  eleventyConfig.addLiquidFilter("showFeatured", function(arr, tag){
-    let filtered = arr.filter((post)=>{
-      return post.data.featured === tag;
-    });
-    return filtered[0];
+  eleventyConfig.addCollection("featuredPosts", function(collection){
+    return collection.getFilteredByTag("posts").filter((post)=>{
+      return post.data.featured;
+    }).sort((a,b) => b.date - a.date);
   });
   return {
     passthroughFileCopy: true

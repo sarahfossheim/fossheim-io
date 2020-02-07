@@ -287,20 +287,20 @@ main p#location {
     margin-bottom: 10px;
 }
 
-#writing main .posts-latest.accessibility {
-    background-color: var(--color-accessibility);
+#writing main .posts-latest:nth-child(1) {
+    background-color: var(--color-post-1);
 }
 
-#writing main .posts-latest.development {
-    background-color: var(--color-development);
+#writing main .posts-latest:nth-child(2) {
+    background-color: var(--color-post-2);
 }
 
-#writing main .posts-latest.design {
-    background-color: var(--color-design); 
+#writing main .posts-latest:nth-child(3) {
+    background-color: var(--color-post-3); 
 }
 
-#writing main .posts-latest.society {
-    background-color: var(--color-society);
+#writing main .posts-latest:nth-child(4) {
+    background-color: var(--color-post-4);
 }
 
 #writing main .posts-latest p {

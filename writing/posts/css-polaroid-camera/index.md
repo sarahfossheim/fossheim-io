@@ -3,7 +3,7 @@ template: post.liquid
 pageTitle: "How I recreated a Polaroid camera with CSS gradients only"
 date: '2020-02-01'
 categories: ['css', 'front-end', 'tutorial']
-featured: "development"
+featured: "2020-02-07"
 title: "How I recreated a Polaroid camera with CSS gradients only"
 excerpt: "A high-level tutorial on how to recreate physical products with CSS only. For this tutorial I made a Polaroid camera entirely out of gradients."
 image: "http://fossheim.io/static/img/css-polaroid-camera.png"

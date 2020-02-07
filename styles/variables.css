@@ -24,9 +24,8 @@
     --text-size-xsmall: 14px;
     --text-size-medium: 30px;
 
-
-    --color-accessibility: #CCE6C9;
-    --color-development: #F3CFCD;
-    --color-design: #EDE389;
-    --color-society: #C7EEEC;
+    --color-post-1: #CCE6C9;
+    --color-post-2: #F3CFCD;
+    --color-post-3: #EDE389;
+    --color-post-4: #C7EEEC;
 }
