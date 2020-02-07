@@ -127,7 +127,7 @@ header nav ul li a:hover {
     animation: hover-animation 1s forwards ease;
 }
 
-header nav ul li a:hover:after {
+header nav ul li a:hover:before {
     content: "";
     display: block;
     width: 100%;
@@ -205,7 +205,7 @@ main p a:hover, main ul li a:hover,main ol li a:hover, footer p a:hover {
     border-bottom: 1px solid var(--orange);
 }
 
-main p a:hover:after, main ul li a:hover:after, main ol li a:hover:after, footer p a:hover:after {
+main p a:hover:before, main ul li a:hover:before, main ol li a:hover:before, footer p a:hover:before {
     display: block;
     content: "";
     width: 100%;
@@ -356,19 +356,36 @@ main p#location {
     width: 100%;
     max-width: var(--main-text-width-wide);
     border-radius: 3px;
-    background-color: lavender;
+    background-color: var(--color-post-4);
     padding: var(--text-size-large);
     padding-left: calc(var(--text-size-large) * 3.5);
-    margin: 4em 0 3em 0;
     background-image: url("/static/icons/patreon.png");
     background-size: auto 50%;
     background-position: left var(--text-size-large) center;
     background-repeat: no-repeat;
+    position: relative;
+    font-weight: 600;
+    border: none;
+    margin-top: 3em;
 }
 
-.patreon p {
-    margin-bottom: 0;
-    font-weight: 600;
+.patreon:after {
+    content: "→";
+    margin-left: 0.5em;
+}
+
+.patreon:hover:before {
+    height: 0;
+}
+
+.patreon:hover:after {
+    margin-left: 1em;
+    transition: 0.3s;
+}
+
+.patreon:hover {
+    color: var(--text-color-blocks);
+    border: none;
 }
 
 /* ---- ARCHIVE ---- */
@@ -380,6 +397,7 @@ main p#location {
 }
 
 #archive .patreon, #post .patreon {
+    width: var(--main-text-width-wide);
     margin-left: -117px !important;
 }
 
@@ -550,6 +568,11 @@ footer div ul li {
     #writing main .posts-latest {
         max-width: 100%;
         min-height: 50px;
+    }
+
+    #archive .patreon, #post .patreon {
+        margin-left: 0 !important;
+        width: 100%;
     }
 }
 
