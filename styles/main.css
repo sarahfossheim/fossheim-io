@@ -353,7 +353,8 @@ main p#location {
 /* ---- PATREON ---- */
 .patreon {
     display: block;
-    width: var(--main-text-width-wide);
+    width: 100%;
+    max-width: var(--main-text-width-wide);
     border-radius: 3px;
     background-color: lavender;
     padding: var(--text-size-large);
