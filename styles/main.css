@@ -272,16 +272,16 @@ main p#location {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: var(--text-size-large);
 }
 
 #writing main .posts-latest {
+    width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
-    width: 100%;
-    height: 250px;
     max-width: 440px;
     max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
+    min-height: 250px;
     background-color: #c1ecd8;
     border-radius: 3px;
     padding: var(--text-size-large);
@@ -323,17 +323,16 @@ main p#location {
 }
 
 #writing main h1 {
-    margin-left: 117px;
+    width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #writing main p.archive {
-    margin-left: 117px;
+    max-width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
     margin-top: var(--text-size-large);
-}
-
-#writing main .posts-list-item {
-    margin: 0 117px;
-    margin: 0 calc(calc(var(--main-text-width-wide) - var(--main-text-width)) / 2);
 }
 
 #writing main .posts-list-item h2 {
@@ -351,6 +350,7 @@ main p#location {
     margin-right: 1em;
 }
 
+/* ---- PATREON ---- */
 .patreon {
     display: block;
     width: var(--main-text-width-wide);
@@ -370,22 +370,25 @@ main p#location {
     font-weight: 600;
 }
 
-#archive .patreon, #post .patreon {
-    margin-left: -117px !important;
-}
-
 /* ---- ARCHIVE ---- */
-#writing main h1, #archive main h1 {
+#archive main h1, #writing main h1 {
     font-size: var(--text-size-small);
     text-transform: uppercase;
     letter-spacing: 0.75px;
     opacity: 0.75;
 }
 
+#archive .patreon, #post .patreon {
+    margin-left: -117px !important;
+}
+
 #archive main .posts-list-item, #writing main .posts-list-item {
     padding: 1.5em 0;
     border-bottom: 1px solid var(--text-color-transparent);
     position: relative;
+    max-width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #archive main .posts-list-item:last-child, #writing main .posts-list-item:last-child  {
@@ -536,17 +539,22 @@ footer div ul li {
     list-style-type: none;
 }
 
-@media screen and (max-width: 1048px) {
-    header p#contact-email {
-        right: -90px;
-    }
-}
-
 @media screen and (max-width: 1125px) {
     #post main .wide, #post main pre  {
         width: 100%;
         left: 0;
         position: static;
+    }
+
+    #writing main .posts-latest {
+        max-width: 100%;
+        min-height: 50px;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    header p#contact-email {
+        right: -90px;
     }
 }
 
@@ -606,6 +614,11 @@ footer div ul li {
 
     main {
         margin-top: 380px;
+    }
+
+    #writing main .posts-latest {
+        width: 100%;
+        max-width: 100%;
     }
 
     footer div {

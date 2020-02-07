@@ -25,7 +25,7 @@ pageId: writing
     {% endfor %}
 </div>
 
-{% for post in collections.sortedPosts limit: 2 %}
+{% for post in collections.sortedPosts limit: 3 %}
 <section class="posts-list-item">
     <p>
         {{post.data.date}}
@@ -48,7 +48,7 @@ pageId: writing
 <div class="patreon"><p>Support my work on Patreon</p></div>
 
 
-{% for post in collections.sortedPosts limit: 3 offset: 2 %}
+{% for post in collections.sortedPosts limit: 3 offset: 3 %}
 <section class="posts-list-item">
     <p>
         {{post.data.date}}
@@ -67,31 +67,5 @@ pageId: writing
     </p>
 </section>
 {% endfor %}
-
-<div class="patreon"><p>Here there will be a list of articles published elsewhere</p></div>
-
-{% for post in collections.sortedPosts limit: 5 offset: 5 %}
-<section class="posts-list-item">
-    <p>
-        {{post.data.date}}
-    </p>
-    <h2>
-        <a href="{{post.url}}">
-            {{post.data.pageTitle}}
-        </a>
-    </h2>
-    <p class="categories">
-        {% for cat in post.data.categories %}
-            <span>
-                {{cat}}
-            </span>
-        {% endfor %}
-    </p>
-</section>
-{% endfor %}
-
 
 <p class="archive"><a href="./archive/">See all posts</a> →</p>
-
-<!-- <div class="patreon"><p>Support my work on Patreon</p></div> -->
-
