@@ -659,6 +659,15 @@ footer div ul li {
         margin-top: 380px;
     }
 
+    #post .wide.posts-block {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
     .posts-latest {
         width: 100%;
         max-width: 100%;
