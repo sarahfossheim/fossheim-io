@@ -266,7 +266,7 @@ main p#location {
     max-width: var(--main-text-width-wide);
 }
 
-#writing main .posts-block {
+.posts-block {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -275,7 +275,7 @@ main p#location {
     margin-bottom: var(--text-size-large);
 }
 
-#writing main .posts-latest {
+.posts-block .posts-latest {
     width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
@@ -283,28 +283,28 @@ main p#location {
     max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
     min-height: 250px;
     background-color: #c1ecd8;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     padding: var(--text-size-large);
     margin-bottom: 10px;
 }
 
-#writing main .posts-latest:nth-child(1) {
+.posts-block .posts-latest:nth-child(1) {
     background-color: var(--color-post-1);
 }
 
-#writing main .posts-latest:nth-child(2) {
+.posts-block .posts-latest:nth-child(2) {
     background-color: var(--color-post-2);
 }
 
-#writing main .posts-latest:nth-child(3) {
+.posts-block .posts-latest:nth-child(3) {
     background-color: var(--color-post-3); 
 }
 
-#writing main .posts-latest:nth-child(4) {
+.posts-block .posts-latest:nth-child(4) {
     background-color: var(--color-post-4);
 }
 
-#writing main .posts-latest p {
+.posts-block .posts-latest p {
     color: var(--text-color-tags);
     font-size: var(--text-size-xsmall);
     text-transform: uppercase;
@@ -313,16 +313,16 @@ main p#location {
     margin-bottom: 0;
 }
 
-#writing main .posts-latest h2 a {
+.posts-block .posts-latest h2 a {
     color: var(--text-color-tags);
 }
 
-#writing main .posts-latest h2 {
+.posts-block .posts-latest h2 {
     font-size: var(--text-size-medium);
     margin-top: 0;
 }
 
-#writing main h1 {
+#writing main h1, .similar {
     width: var(--main-text-width);
     margin-left: auto;
     margin-right: auto;
@@ -342,11 +342,11 @@ main p#location {
     margin-bottom: 0.25em;
 }
 
-#writing main .posts-latest p.categories {
+.posts-block .posts-latest p.categories {
     margin-top: 0.5em;
 }
 
-#writing main .posts-latest p.categories span {
+.posts-block .posts-latest p.categories span {
     margin-right: 1em;
 }
 
@@ -355,7 +355,7 @@ main p#location {
     display: block;
     width: 100%;
     max-width: var(--main-text-width-wide);
-    border-radius: 3px;
+    /* border-radius: 3px; */
     background-color: var(--color-post-4);
     padding: var(--text-size-large);
     padding-left: calc(var(--text-size-large) * 3.5);
@@ -389,11 +389,12 @@ main p#location {
 }
 
 /* ---- ARCHIVE ---- */
-#archive main h1, #writing main h1 {
+#archive main h1, #writing main h1, .similar {
     font-size: var(--text-size-small);
     text-transform: uppercase;
     letter-spacing: 0.75px;
     opacity: 0.75;
+    font-weight: 600;
 }
 
 #archive .patreon, #post .patreon {
@@ -482,6 +483,10 @@ main p#location {
     margin-top: 1.5em;
 }
 
+#post main .posts-block .posts-latest h2 {
+    margin: 0;
+}
+
 #post main h2 {
     font-size: 1.35em;
 }
@@ -506,9 +511,13 @@ main p#location {
 }
 
 #post main hr {
-    margin-bottom: 1em;
+    margin: 4em 0;
     border: 0;
     border-top: 1px solid var(--text-color-transparent);
+}
+
+#post main .archive {
+    margin-bottom: calc(var(--text-size-large) * 2);
 }
 
 /* Footer. */
@@ -565,9 +574,19 @@ footer div ul li {
         position: static;
     }
 
-    #writing main .posts-latest {
+    .wide.posts-block .posts-latest {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .posts-block .posts-latest {
         max-width: 100%;
         min-height: 50px;
+    }
+
+    .wide .posts-latest {
+        margin-left: 5vw;
     }
 
     #archive .patreon, #post .patreon {
@@ -640,7 +659,7 @@ footer div ul li {
         margin-top: 380px;
     }
 
-    #writing main .posts-latest {
+    .posts-latest {
         width: 100%;
         max-width: 100%;
     }

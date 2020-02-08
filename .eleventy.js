@@ -17,11 +17,19 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("posts").filter((post)=>{
       return post.data.featured;
     }).sort((a,b) => {
-      console.log(b.data.featured, a.data.featured);
       const featuredDateA = new Date(a.data.featured);
       const featuredDateB = new Date(b.data.featured);
       return featuredDateB - featuredDateA;
     });
+  });
+  eleventyConfig.addLiquidFilter("similarPosts", function(collection, date, categories){
+    const similar = collection.filter((post) => {
+      return post.data.categories.filter(Set.prototype.has, new Set(categories)).length >= 1 && post.data.date !== date;
+    }).sort((a,b) => {
+      return b.data.categories.filter(Set.prototype.has, new Set(categories)).length - a.data.categories.filter(Set.prototype.has, new Set(categories)).length;
+    });
+
+    return similar.length >= 2 ? similar : [];
   });
   return {
     passthroughFileCopy: true
