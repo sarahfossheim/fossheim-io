@@ -29,3 +29,11 @@
     --color-post-1: #C7EEEC;
     --color-post-4: #CCE6C9;
 }
+
+@media screen and (max-width: 666px) {
+    :root {
+        --text-size-default: 22px;
+        --text-size-large: 32px;
+        --text-size-medium: 28px;
+    }
+}
