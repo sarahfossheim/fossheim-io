@@ -1,11 +1,8 @@
 ---
 layout: layout.liquid
 pageId: front
+pageTitle: "Sarah L. Fossheim"
 ---
-
-<h1 class="rainbow-text-static">
-    Sarah L. Fossheim
-</h1>
 
 <h2>
     I'm a multidisciplinary developer and designer, with a strong interest in data science, AI, ethics and accessibility.

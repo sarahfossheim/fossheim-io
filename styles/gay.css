@@ -117,7 +117,7 @@
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
 
-.rainbow-text-static {
+.rainbow-text-static, #front main h1 {
     /* Create a linear gradient. */
     /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
     background: linear-gradient(
