@@ -3,27 +3,8 @@ layout: layout.liquid
 pageTitle: 📝 Writing
 pageId: writing
 ---
-<div class="posts-block">
-    {% for post in collections.featuredPosts limit: 4 %}
-        <section class="posts-latest">
-            <p>
-                Featured post | {{post.data.date}}
-            </p>
-            <h2>
-                <a href="{{post.url}}">
-                    {{post.data.pageTitle}}
-                </a>
-            </h2>
-            <p class="categories">
-                {% for cat in post.data.categories %}
-                    <span>
-                        {{cat}}
-                    </span>
-                {% endfor %}
-            </p>
-        </section>
-    {% endfor %}
-</div>
+
+{% include components/highlighted.liquid posts: collections.featuredPosts, label: "Featured post", limit: 4 %}
 
 {% for post in collections.sortedPosts limit: 3 %}
 <section class="posts-list-item">

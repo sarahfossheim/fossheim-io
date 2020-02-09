@@ -263,7 +263,7 @@ main p#location {
 
 /* ---- WRITING PAGE ---- */
 #writing main {
-    max-width: var(--main-text-width-wide);
+    max-width: var(--main-text-width);
 }
 
 .posts-block {
@@ -283,7 +283,6 @@ main p#location {
     max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
     min-height: 250px;
     background-color: #c1ecd8;
-    /* border-radius: 3px; */
     padding: var(--text-size-large);
     margin-bottom: 10px;
 }
@@ -469,7 +468,7 @@ main p#location {
     white-space: pre-wrap;
 }
 
-#post main .wide {
+.wide {
     width: 100%;
     width: var(--main-text-width-wide);
     position: relative;
@@ -568,7 +567,7 @@ footer div ul li {
 }
 
 @media screen and (max-width: 1125px) {
-    #post main .wide, #post main pre  {
+    .wide, #post main pre  {
         width: 100%;
         left: 0;
         position: static;

@@ -7,32 +7,11 @@ layout: base.liquid
 <h1>{{ pageTitle }}</h1>
 {{ content }}
 
-{% assign similar = collections.sortedPosts | similarPosts: date, categories %}
 
 <hr>
 
-<p class="similar">More like this</p>
-<div class="posts-block wide">
-    {% for post in similar limit: 2 %}
-        <section class="posts-latest">
-            <p>
-                Similar post | {{post.data.date}}
-            </p>
-            <h2>
-                <a href="{{post.url}}">
-                    {{post.data.pageTitle}}
-                </a>
-            </h2>
-            <p class="categories">
-                {% for cat in post.data.categories %}
-                    <span>
-                        {{cat}}
-                    </span>
-                {% endfor %}
-            </p>
-        </section>
-    {% endfor %}
-</div>
+{% assign similar = collections.sortedPosts | similarPosts: date, categories limit: 2 %}
+{% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
 
 <p class="archive"><a href="./archive/">See all posts →</a></p>
 
