@@ -30,7 +30,7 @@ body {
 
 /* Style the selected text and elements. */
 ::selection{
-    background-color: var(--orange);
+    background-color: var(--red);
     color: var(--body-background-color);
 }
 
@@ -122,8 +122,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     position: relative;
-    /* top: -0.4em;
-    padding-bottom: 0.4em; */
     animation: hover-animation 1s forwards ease;
 }
 
@@ -201,8 +199,8 @@ main p a, main ul li a, main ol li a, footer p a {
 }
 
 main p a:hover, main ul li a:hover,main ol li a:hover, footer p a:hover {
-    color: var(--orange);
-    border-bottom: 1px solid var(--orange);
+    color: var(--red);
+    border-bottom: 1px solid var(--red);
 }
 
 main p a:hover:before, main ul li a:hover:before, main ol li a:hover:before, footer p a:hover:before {
@@ -327,13 +325,6 @@ main p#location {
     margin-right: auto;
 }
 
-#writing main p.archive {
-    max-width: var(--main-text-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: var(--text-size-large);
-}
-
 #writing main .posts-list-item h2 {
     /*font-size: var(--text-size-default);*/
     font-size: var(--text-size-large);;
@@ -347,6 +338,36 @@ main p#location {
 
 .posts-block .posts-latest p.categories span {
     margin-right: 1em;
+}
+
+/* ---- CTA LINK ---- */
+.cta-link {
+    max-width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: var(--text-size-small);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cta-link a {
+    padding-bottom: 8px;
+    border-width: 3px;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    letter-spacing: 0.5px;
+}
+
+.cta-link a:hover {
+    border-bottom: 3px solid var(--text-color);
+    color: var(--red);
+    animation: none;
+}
+
+.cta-link a:hover:before {
+    height: 3px;
+    bottom: -3px;
 }
 
 /* ---- PATREON ---- */
@@ -394,11 +415,6 @@ main p#location {
     letter-spacing: 0.75px;
     opacity: 0.75;
     font-weight: 600;
-}
-
-#archive .patreon, #post .patreon {
-    width: var(--main-text-width-wide);
-    margin-left: -117px !important;
 }
 
 .post-list .posts-list-item {
@@ -515,7 +531,7 @@ main p#location {
     border-top: 1px solid var(--text-color-transparent);
 }
 
-#post main .archive {
+#post main .cta-link {
     margin-bottom: calc(var(--text-size-large) * 2);
 }
 
@@ -586,11 +602,6 @@ footer div ul li {
 
     .wide .posts-latest {
         margin-left: 5vw;
-    }
-
-    #archive .patreon, #post .patreon {
-        margin-left: 0 !important;
-        width: 100%;
     }
 }
 

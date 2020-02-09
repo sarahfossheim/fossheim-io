@@ -8,10 +8,9 @@ pageId: writing
 {% include components/postlist.liquid posts:collections.sortedPosts limit: 3 %}
 
 
-<p><a href="https://www.patreon.com/fossheim" class="patreon">Support my work on Patreon</a></p>
-
+{% include components/patreon.liquid %}
 
 {% include components/postlist.liquid posts:collections.sortedPosts limit: 3 offset: 3 %}
 
 
-<p class="archive"><a href="./archive/">See all posts →</a></p>
+{% include components/ctalink.liquid link: "./archive", label: "View all posts" %}

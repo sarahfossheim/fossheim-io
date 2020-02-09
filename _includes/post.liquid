@@ -13,6 +13,6 @@ layout: base.liquid
 {% assign similar = collections.sortedPosts | similarPosts: date, categories limit: 2 %}
 {% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
 
-<p class="archive"><a href="./archive/">See all posts →</a></p>
+{% include components/ctalink.liquid link: "/writing/archive", label: "View all posts" %}
 
-<p><a href="" class="patreon">Support my work on Patreon</a></p>
+{% include components/patreon.liquid %}
