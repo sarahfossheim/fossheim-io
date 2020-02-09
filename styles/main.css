@@ -412,8 +412,7 @@ main p#location {
 #archive main h1, #writing main h1, .similar {
     font-size: var(--text-size-small);
     text-transform: uppercase;
-    letter-spacing: 0.75px;
-    opacity: 0.75;
+    /* letter-spacing: 0.75px; */
     font-weight: 600;
 }
 
@@ -432,6 +431,7 @@ main p#location {
 
 .post-list .posts-list-item a {
     text-decoration: underline;
+    text-decoration-thickness: 1.5px;
 }
 
 .post-list .posts-list-item a:hover {
@@ -441,7 +441,7 @@ main p#location {
 .post-list .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
-    font-size: var(--text-size-small);
+    font-size: var(--text-size-xsmall);
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -665,8 +665,8 @@ footer div ul li {
         width: auto;
     }
 
-    main {
-        margin-top: 380px;
+    #front main {
+        margin-top: 350px;
     }
 
     #post .wide.posts-block {
@@ -718,6 +718,12 @@ footer div ul li {
         width: 100vw;
         position: relative;
         left: -10vw;
+    }
+
+    #post main .wide .patreon {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #post main iframe.wide {
