@@ -365,7 +365,7 @@ main p#location {
     position: relative;
     font-weight: 600;
     border: none;
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 
 .patreon:after {
@@ -401,7 +401,7 @@ main p#location {
     margin-left: -117px !important;
 }
 
-#archive main .posts-list-item, #writing main .posts-list-item {
+.post-list .posts-list-item {
     padding: 1.5em 0;
     border-bottom: 1px solid var(--text-color-transparent);
     position: relative;
@@ -410,19 +410,19 @@ main p#location {
     margin-right: auto;
 }
 
-#archive main .posts-list-item:last-child, #writing main .posts-list-item:last-child  {
+.post-list .posts-list-item:last-child  {
     border-bottom: none;
 }
 
-#archive main .posts-list-item a, #writing main .posts-list-item a {
+.post-list .posts-list-item a {
     text-decoration: underline;
 }
 
-#archive main .posts-list-item a:hover, #writing main .posts-list-item a:hover {
+.post-list .posts-list-item a:hover {
     text-decoration: none;
 }
 
-#archive main .posts-list-item p, #writing main .posts-list-item p {
+.post-list .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
     font-size: var(--text-size-small);
@@ -430,15 +430,15 @@ main p#location {
     font-weight: 600;
 }
 
-#archive main .posts-list-item p.categories, #writing main .posts-list-item p.categories {
+.post-list .posts-list-item p.categories {
     font-size: var(--text-size-xsmall);
 }
 
-#archive main .posts-list-item p span, #writing main .posts-list-item p span {
+.post-list .posts-list-item p span {
     margin-right: 1em;
 }
 
-#archive main .posts-list-item h2 {
+.post-list .posts-list-item h2 {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
