@@ -1,6 +1,6 @@
-<article class="posts-block wide">
+<div class="posts-block wide">
     {% for post in posts limit: limit %}
-        <article class="posts-latest">
+        <div class="posts-latest">
             <p>
                 {{label}} | {{post.data.date}}
             </p>
@@ -16,6 +16,6 @@
                     </span>
                 {% endfor %}
             </p>
-        </article>
+        </div>
     {% endfor %}
-</article>
+</div>
