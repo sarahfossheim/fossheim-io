@@ -264,6 +264,14 @@ main p#location {
     max-width: var(--main-text-width);
 }
 
+#writing main .posts-block  {
+    margin-bottom: 3em;
+}
+
+#writing main .latest {
+    margin-bottom: 0em;
+}
+
 .posts-block {
     display: flex;
     flex-direction: row;
@@ -406,6 +414,10 @@ main p#location {
 .patreon:hover {
     color: var(--text-color-blocks);
     border: none;
+}
+
+#post main .wide .patreon {
+    margin-bottom: -1em;
 }
 
 /* ---- ARCHIVE ---- */
@@ -721,9 +733,15 @@ footer div ul li {
     }
 
     #post main .wide .patreon {
-        width: 90vw;
+        width: 80vw;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .patreon {
+        background-size: auto 35px;
+        font-size: var(--text-size-regular);
+        padding-left: 90px;
     }
 
     #post main iframe.wide {

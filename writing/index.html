@@ -5,8 +5,10 @@ pageId: writing
 ---
 
 {% include components/highlighted.liquid posts: collections.featuredPosts, label: "Featured post", limit: 4 %}
-{% include components/postlist.liquid posts:collections.sortedPosts limit: 3 %}
 
+<h1 class="latest">Latest posts</h1>
+
+{% include components/postlist.liquid posts:collections.sortedPosts limit: 3 %}
 
 {% include components/patreon.liquid %}
 

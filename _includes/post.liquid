@@ -9,10 +9,10 @@ layout: base.liquid
 
 
 <hr>
-
-{% assign similar = collections.sortedPosts | similarPosts: date, categories limit: 2 %}
-{% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
-
 {% include components/ctalink.liquid link: "/writing/archive", label: "View all posts" %}
 
 {% include components/patreon.liquid %}
+{% assign similar = collections.sortedPosts | similarPosts: date, categories limit: 2 %}
+{% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
+
+
