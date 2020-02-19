@@ -18,11 +18,12 @@
 
     --code-block-bg: #ece3e1;
 
-    --text-size-default: 24px;
-    --text-size-large: 36px;
-    --text-size-small: 18px;
-    --text-size-xsmall: 14px;
-    --text-size-medium: 30px;
+    --text-size-base: 24px;
+    --text-size-default: 1rem;
+    --text-size-large: 1.5rem;
+    --text-size-small: 0.75rem;
+    --text-size-xsmall: 0.58rem;
+    --text-size-medium: 1.25rem;
 
     --color-post-2: #F3CFCD;
     --color-post-3: #EDE389;

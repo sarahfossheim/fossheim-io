@@ -19,6 +19,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    font-size: var(--text-size-base);
+}
+
 /* Set the default font and color for the body. */
 body {
     background-color: var(--body-background-color);
