@@ -126,7 +126,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     position: relative;
-    animation: hover-animation 1s forwards ease;
 }
 
 header nav ul li a:hover:before {
@@ -199,12 +198,12 @@ main p a, main ul li a, main ol li a, footer p a {
     color: var(--text-color-blocks);
     text-decoration: none;
     border-bottom: 1px solid var(--text-color-blocks);
-    transition: 0.5s;
 }
 
 main p a:hover, main ul li a:hover,main ol li a:hover, footer p a:hover {
     color: var(--red);
     border-bottom: 1px solid var(--red);
+    transition: 0.5s;
 }
 
 main p a:hover:before, main ul li a:hover:before, main ol li a:hover:before, footer p a:hover:before {
