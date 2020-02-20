@@ -323,6 +323,11 @@ main p#location {
 
 .posts-block .posts-latest h2 a {
     color: var(--text-color-tags);
+    text-decoration: underline;
+}
+
+.posts-block .posts-latest h2 a:hover {
+    text-decoration: none;
 }
 
 .posts-block .posts-latest h2 {
@@ -398,6 +403,7 @@ main p#location {
     font-weight: 600;
     border: none;
     margin-top: 1.5em;
+    color: var(--text-color-tags);
 }
 
 .patreon:after {
@@ -409,14 +415,15 @@ main p#location {
     height: 0;
 }
 
-.patreon:hover:after {
+/* .patreon:hover:after {
     margin-left: 1em;
-    transition: 0.3s;
-}
+    transition: 0.5s;
+} */
 
 .patreon:hover {
-    color: var(--text-color-blocks);
+    color: var(--text-color-tags);
     border: none;
+    background-color: var(--color-post-3);
 }
 
 #post main .wide .patreon {
