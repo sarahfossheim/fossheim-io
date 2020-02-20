@@ -33,8 +33,6 @@
 
 @media screen and (max-width: 666px) {
     :root {
-        --text-size-default: 22px;
-        --text-size-large: 32px;
-        --text-size-medium: 28px;
+        --text-size-base: 22px;
     }
 }
