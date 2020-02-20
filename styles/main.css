@@ -342,7 +342,7 @@ main p#location {
 }
 
 #writing main .posts-list-item h2 {
-    font-size: var(--text-size-large);;
+    font-size: var(--text-size-large);
     margin-top: 0em;
     margin-bottom: 0.25em;
 }
@@ -430,7 +430,7 @@ main p#location {
 }
 
 /* ---- ARCHIVE ---- */
-#archive main h1, #writing main h1, .similar {
+#archive main h1, #writing main h1, #writing main h1.similar {
     font-size: var(--text-size-small);
     text-transform: uppercase;
     font-weight: 600;

@@ -6,13 +6,10 @@ pageId: writing
 
 {% include components/highlighted.liquid posts: collections.featuredPosts, label: "Featured post", limit: 4 %}
 
-<h1 class="latest">Latest posts</h1>
-
 {% include components/postlist.liquid posts:collections.sortedPosts limit: 3 %}
 
 {% include components/patreon.liquid %}
 
 {% include components/postlist.liquid posts:collections.sortedPosts limit: 3 offset: 3 %}
-
 
 {% include components/ctalink.liquid link: "./archive", label: "View all posts" %}
