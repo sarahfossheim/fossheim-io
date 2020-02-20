@@ -342,7 +342,6 @@ main p#location {
 }
 
 #writing main .posts-list-item h2 {
-    /*font-size: var(--text-size-default);*/
     font-size: var(--text-size-large);;
     margin-top: 0em;
     margin-bottom: 0.25em;
@@ -434,7 +433,6 @@ main p#location {
 #archive main h1, #writing main h1, .similar {
     font-size: var(--text-size-small);
     text-transform: uppercase;
-    /* letter-spacing: 0.75px; */
     font-weight: 600;
 }
 
@@ -463,7 +461,7 @@ main p#location {
 .post-list .posts-list-item p {
     color: var(--text-color);
     margin-bottom: 0;
-    font-size: var(--text-size-xsmall);
+    font-size: var(--text-size-small);
     text-transform: uppercase;
     font-weight: 600;
 }
