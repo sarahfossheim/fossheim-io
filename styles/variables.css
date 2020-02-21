@@ -6,13 +6,37 @@
     --blue: #476098;
     --purple: #A7489B;
 
-    --body-background-color: #f5f4f4;
-    --text-color: #5a24c2; 
+    --body-background-color: #fff;
+    --text-color: #5A24C2; 
     --text-color-transparent: rgba(90,36,195, 0.2);
     --text-color-blocks: #401593; 
+    --text-color-tags: #270667;
 
     --main-text-width: 666px;
     --main-text-width-wide: 900px;
+    --main-container-padding: 117px;
 
     --code-block-bg: #ece3e1;
+
+    --text-size-base: 24px;
+    --text-size-xlarge: 5.2rem;
+    --text-size-default: 1rem;
+    --text-size-large: 1.5rem;
+    --text-size-small: 0.75rem;
+    --text-size-xsmall: 0.58rem;
+    --text-size-medium: 1.25rem;
+
+    --color-post-2: #F3CFCD;
+    --color-post-3: #EDE389;
+    --color-post-1: #C7EEEC;
+    --color-post-4: #CCE6C9;
+}
+
+@media screen and (max-width: 750px) {
+    :root {
+        --text-size-base: 20px;
+        --text-size-small: 0.9rem;
+        --text-size-xsmall: 0.75rem;    
+        --text-size-xlarge: 3rem;
+    }
 }

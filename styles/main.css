@@ -12,10 +12,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
     overflow-x: hidden;
+}
+
+html {
+    font-size: var(--text-size-base);
 }
 
 /* Set the default font and color for the body. */
@@ -24,12 +29,12 @@ body {
     color: var(--text-color);
 
     font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
-    font-size: 24px;
+    font-size: var(--text-size-default);
 }
 
 /* Style the selected text and elements. */
 ::selection{
-    background-color: var(--orange);
+    background-color: var(--red);
     color: var(--body-background-color);
 }
 
@@ -51,7 +56,7 @@ header {
     margin-left: auto;
     margin-right: auto;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -65,8 +70,8 @@ header p#full-name {
 
     margin-top: 30px;
 
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: var(--text-size-large);
+    font-weight: 700;
     letter-spacing: 0.5px;
     line-height: 1.15em;
 }
@@ -76,7 +81,7 @@ header p#full-name a, header p#contact-email a {
 }
 
 header p#contact-email {
-    font-weight: 600;
+    font-weight: 700;
     width: 230px;
     transform: rotate(90deg);
     
@@ -86,7 +91,7 @@ header p#contact-email {
 }
 
 /* Style the navigation. */
-nav {
+header nav {
     position: absolute;
     left: 0;
     right: 0;
@@ -96,37 +101,34 @@ nav {
     margin-right: auto;
     padding-top: 50px;
 
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
 }
 
-nav ul {
+header nav ul {
     display: block;
 
     position: absolute;
     right: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 2em;
 
     list-style-type: none;
 }
 
-nav ul li a {
+header nav ul li a {
     text-decoration: none;
     color: var(--text-color);
     width: auto;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     position: relative;
-    /* top: -0.4em;
-    padding-bottom: 0.4em; */
-    animation: hover-animation 1s forwards ease;
 }
 
-nav ul li a:hover:after {
+header nav ul li a:hover:before {
     content: "";
     display: block;
     width: 100%;
@@ -157,24 +159,20 @@ nav ul li a:hover:after {
 main {
     width: 80vw;
     max-width: var(--main-text-width);
-    font-size: 1em;
+    font-size: var(--text-size-default);
     line-height: 1.25em;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 450px;
-    margin-bottom: 4em;
+    margin: 250px auto 150px auto;
 }
 
 main h1 {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: var(--text-size-large);
     line-height: 1.25em;
     margin-bottom: 1.5em;
 }
 
 main h1 span {
-    font-size: 0.5em;
+    font-size: var(--text-size-small);
     text-transform: uppercase;
 }
 
@@ -200,15 +198,15 @@ main p a, main ul li a, main ol li a, footer p a {
     color: var(--text-color-blocks);
     text-decoration: none;
     border-bottom: 1px solid var(--text-color-blocks);
-    transition: 0.5s;
 }
 
 main p a:hover, main ul li a:hover,main ol li a:hover, footer p a:hover {
-    color: var(--orange);
-    border-bottom: 1px solid var(--orange);
+    color: var(--red);
+    border-bottom: 1px solid var(--red);
+    transition: 0.5s;
 }
 
-main p a:hover:after, main ul li a:hover:after, main ol li a:hover:after, footer p a:hover:after {
+main p a:hover:before, main ul li a:hover:before, main ol li a:hover:before, footer p a:hover:before {
     display: block;
     content: "";
     width: 100%;
@@ -237,72 +235,260 @@ main p a:hover:after, main ul li a:hover:after, main ol li a:hover:after, footer
 
 main p#location {
     margin-top: 3em;
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
 }
 
-main#writing h1 {
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
-    opacity: 0.75;
-    margin-top: -5.4em;
+/* ---- FRONT PAGE ---- */
+#front header #full-name {
+    display: none;
 }
 
-main#writing .posts-list-item {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border-bottom: 1px solid var(--text-color-transparent);
-    position: relative
+#front main h1 {
+    font-size: 125px;
+    font-size: var(--text-size-xlarge);
+    line-height: 130px;
+    line-height:  calc(var(--text-size-xlarge) + 5px);
+    font-weight: 700;
+    width: 600px;
+    margin-bottom: 75px;
+
+    background-size: 580px;
 }
 
-main#writing .posts-list-item:last-child {
-    border-bottom: none;
+#front main h2 {
+    font-size: 1.75em;
+    margin-bottom: 1em;
 }
 
-/* main#writing .posts-list-item a:after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
+#front main p {
+    color: var(--text-color)
+}
+
+/* ---- WRITING PAGE ---- */
+#writing main {
+    max-width: var(--main-text-width);
+}
+
+#writing main .posts-block  {
+    margin-bottom: 3em;
+}
+
+#writing main .latest {
+    margin-bottom: 0em;
+}
+
+.posts-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: var(--text-size-large);
+}
+
+.posts-block .posts-latest {
     width: 100%;
-    height: 100%;
-} */
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 440px;
+    max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
+    min-height: 250px;
+    background-color: #c1ecd8;
+    padding: var(--text-size-large);
+    margin-bottom: 10px;
+}
 
-main#writing .posts-list-item a {
+.posts-block .posts-latest:nth-child(1) {
+    background-color: var(--color-post-1);
+}
+
+.posts-block .posts-latest:nth-child(2) {
+    background-color: var(--color-post-2);
+}
+
+.posts-block .posts-latest:nth-child(3) {
+    background-color: var(--color-post-3); 
+}
+
+.posts-block .posts-latest:nth-child(4) {
+    background-color: var(--color-post-4);
+}
+
+.posts-block .posts-latest p {
+    color: var(--text-color-tags);
+    font-size: var(--text-size-xsmall);
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.75;
+    margin-bottom: 0;
+}
+
+.posts-block .posts-latest h2 a {
+    color: var(--text-color-tags);
+    /* text-decoration: underline; */
+}
+
+.posts-block .posts-latest h2 a:hover {
     text-decoration: underline;
 }
 
-main#writing .posts-list-item a:hover {
-    text-decoration: none;
+.posts-block .posts-latest h2 {
+    font-size: var(--text-size-medium);
+    margin-top: 0;
 }
 
-main#writing .posts-list-item p {
-    color: var(--text-color);
-    margin-bottom: 0;
-    font-size: 0.75em;
+#writing main h1, .similar {
+    width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#writing main .posts-list-item h2 {
+    font-size: var(--text-size-large);
+    margin-top: 0em;
+    margin-bottom: 0.25em;
+}
+
+.posts-block .posts-latest p.categories {
+    margin-top: 0.5em;
+}
+
+.posts-block .posts-latest p.categories span {
+    margin-right: 1em;
+}
+
+/* ---- CTA LINK ---- */
+.cta-link {
+    max-width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    font-size: var(--text-size-small);
     text-transform: uppercase;
     font-weight: 600;
 }
 
-main#writing .posts-list-item p.categories {
-    font-size: 0.58em;
+.cta-link a {
+    padding-bottom: 8px;
+    border-width: 3px;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    letter-spacing: 0.5px;
 }
 
-main#writing .posts-list-item p span {
+.cta-link a:hover {
+    border-bottom: 3px solid var(--text-color);
+    color: var(--red);
+    animation: none;
+}
+
+.cta-link a:hover:before {
+    height: 3px;
+    bottom: -3px;
+}
+
+/* ---- PATREON ---- */
+.patreon {
+    display: block;
+    width: 100%;
+    max-width: var(--main-text-width-wide);
+    /* border-radius: 3px; */
+    background-color: var(--color-post-4);
+    padding: var(--text-size-large);
+    padding-left: calc(var(--text-size-large) * 3.5);
+    background-image: url("/static/icons/patreon.png");
+    background-size: auto 50%;
+    background-position: left var(--text-size-large) center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-weight: 600;
+    border: none;
+    margin-top: 1.5em;
+    color: var(--text-color-tags);
+}
+
+.patreon:after {
+    content: "→";
+    margin-left: 0.5em;
+}
+
+.patreon:hover:before {
+    height: 0;
+}
+
+.patreon:hover:after {
+    margin-left: 1em;
+    transition: 0.5s;
+}
+
+.patreon:hover {
+    color: var(--text-color-tags);
+    border: none;
+    background-color: var(--color-post-3);
+}
+
+#post main .wide .patreon {
+    margin-bottom: -1em;
+}
+
+/* ---- ARCHIVE ---- */
+#archive main h1, #writing main h1, #writing main h1.similar {
+    font-size: var(--text-size-small);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.post-list .posts-list-item {
+    padding: 1.5em 0;
+    border-bottom: 1px solid var(--text-color-transparent);
+    position: relative;
+    max-width: var(--main-text-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-list .posts-list-item:last-child  {
+    border-bottom: none;
+}
+
+.post-list .posts-list-item a {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.post-list .posts-list-item a:hover {
+    text-decoration: none;
+}
+
+.post-list .posts-list-item p {
+    color: var(--text-color);
+    margin-bottom: 0;
+    font-size: var(--text-size-small);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.post-list .posts-list-item p.categories {
+    font-size: var(--text-size-xsmall);
+}
+
+.post-list .posts-list-item p span {
     margin-right: 1em;
 }
 
-main#writing .posts-list-item h2 {
+.post-list .posts-list-item h2 {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
 
-main#post pre, main#post iframe, main#post img {
+
+/* ---- POSTS PAGE ---- */
+#post main pre, #post main iframe, #post main img {
     margin-bottom: 1.5em;
 }
 
-main#post pre {
+
+#post main pre {
     overflow-x: scroll;
     color: var(--text-color-blocks);
     background-color: var(--code-block-bg);
@@ -315,12 +501,12 @@ main#post pre {
     box-sizing: border-box;
 }
 
-main#post pre code {
-    font-size: 0.75em;
+#post main pre code {
+    font-size: var(--text-size-small);
     white-space: pre-wrap;
 }
 
-main#post .wide {
+.wide {
     width: 100%;
     width: var(--main-text-width-wide);
     position: relative;
@@ -328,39 +514,47 @@ main#post .wide {
     padding: 0;
 }
 
-main#post h2, main#post h3, main#post h4, main#post h5 {
+#post main h2, #post main h3, #post main h4, #post main h5 {
     font-weight: 600;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
 }
 
-main#post h2 {
+#post main .posts-block .posts-latest h2 {
+    margin: 0;
+}
+
+#post main h2 {
     font-size: 1.35em;
 }
 
-main#post *:not(pre) code {
+#post main *:not(pre) code {
     background-color: var(--code-block-bg);
     color: var(--text-color-blocks);
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
     padding: 0.25em;
 }
 
-main#post ul, main#post ol {
+#post main ul, #post main ol {
     margin-bottom: 1.5em;
     margin-left: 1em;
 }
 
-main#post ul li, main#post ol li {
+#post main ul li, #post main ol li {
     margin-bottom: 0.5em;
 }
-main#post ul li ul, main#post ol li ul, main#post ol li ol, main#post ul li ol {
+#post main ul li ul, #post main ol li ul, #post main ol li ol, #post main ul li ol {
     margin-top: 0.5em;
 }
 
-main#post hr {
-    margin-bottom: 1em;
+#post main hr {
+    margin: 4em 0;
     border: 0;
     border-top: 1px solid var(--text-color-transparent);
+}
+
+#post main .cta-link {
+    margin-bottom: calc(var(--text-size-large) * 2);
 }
 
 /* Footer. */
@@ -375,7 +569,7 @@ footer {
     padding-top: 5em;
     padding-bottom: 5em;
 
-    font-size: 0.75em;
+    font-size: var(--text-size-small);
 
     border-top: var(--text-color-transparent) 1px solid;
     overflow: hidden;
@@ -403,24 +597,39 @@ footer div:last-child {
 footer div .pronouns {
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 28px;
 }
 
 footer div ul li {
     list-style-type: none;
 }
 
-@media screen and (max-width: 1048px) {
-    header p#contact-email {
-        right: -90px;
-    }
-}
-
 @media screen and (max-width: 1125px) {
-    main#post .wide, main#post pre  {
+    .wide, #post main pre  {
         width: 100%;
         left: 0;
         position: static;
+    }
+
+    .wide.posts-block .posts-latest {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .posts-block .posts-latest {
+        max-width: 100%;
+        min-height: 50px;
+    }
+
+    .wide .posts-latest {
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    header p#contact-email {
+        right: -90px;
     }
 }
 
@@ -430,21 +639,21 @@ footer div ul li {
     }
 
     header p#full-name {
-        font-size: 1.5em;
+        font-size: var(--text-size-large);
         width: 170px;
         margin-left: 0vw;
         z-index: 1;
         position: relative;
     }
 
-    main#post .wide {
+    #post main .wide {
         width: 80vw;
         max-width: var(--main-text-width);
         position: relative;
         
     }
 
-    main#post pre {
+    #post main pre {
         width: 80vw;
         max-width: var(--main-text-width);
         position: static;
@@ -458,7 +667,7 @@ footer div ul li {
         width: 80%;
     }
 
-    nav {
+    header nav {
         padding-top: 1.5em;
         width: 100%;
         height: 182px;
@@ -467,10 +676,10 @@ footer div ul li {
 
         z-index: 0;
     }
-    nav ul  {
+    header nav ul  {
         right: 0;  
     }
-    nav ul li {
+    header nav ul li {
         margin-left: 0;
         text-align: right;
         margin-bottom: 0.5em;
@@ -478,8 +687,22 @@ footer div ul li {
         width: auto;
     }
 
-    main {
-        margin-top: 380px;
+    #front main {
+        margin-top: 350px;
+    }
+
+    #post .wide.posts-block {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .posts-latest {
+        width: 100%;
+        max-width: 100%;
     }
 
     footer div {
@@ -501,22 +724,46 @@ footer div ul li {
     }
 }
 
-@media screen and (max-width: 666px) {
-    body {
-        font-size: 22px;
+@media screen and (max-width: 750px) {
+    #front main h1 {
+        margin-top: -100px;
+        width: 300px;
+        background-size: 95%;
+        margin-bottom: 1rem;
     }
-    main#post .wide, main#post pre {
+}
+
+
+@media screen and (max-width: 666px) {
+    #post main .wide, #post main pre {
         width: 100vw;
         position: relative;
         left: -10vw;
     }
 
-    main#post iframe.wide {
+    #post main .wide .patreon {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .patreon {
+        background-size: auto 35px;
+        font-size: var(--text-size-regular);
+        padding-left: 90px;
+    }
+
+    #post main iframe.wide {
         width: 90vw;
         left: -5vw;
     }
 
-    main#post pre {
-        font-size: 1em;
+    #post main pre {
+        font-size: var(--text-size-regular);
     }
+}
+
+/* To enforce alt tags */
+img:not([alt]) {
+    filter: blur(5px);
 }

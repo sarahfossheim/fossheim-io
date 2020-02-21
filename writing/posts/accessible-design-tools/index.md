@@ -1,6 +1,7 @@
 ---
 pageTitle: 'Tools for designing good-looking accessible interfaces'
 categories: ['design', 'figma', 'accessibility']
+featured: "2020-02-06"
 date: '2019-12-21'
 title: 'Tools for designing good-looking accessible interfaces'
 excerpt: "A list of plugins, websites and resources for accessible web design"
@@ -15,11 +16,11 @@ Interfaces can be aesthetically pleasing, while also remaining accessible. And l
 
 [Color blind](https://www.figma.com/c/plugin/733343906244951586/Color-Blind) for Figma is one of the best tools to test how designs look for people with different types of colorblindness. 
 
-<img class="wide" src="/static/img/a11y-colorblind-menu.png" tag="Screenshot of the color blind plugin for Figma" />
+<img class="wide" src="/static/img/a11y-colorblind-menu.png" alt="Screenshot of the color blind plugin for Figma" />
 
 It's free and very thorough, but the only downside is that it doesn't work for images. And you have to re-run the plugin and create new copies whenever you make changes. 
 
-<img class="wide" src="/static/img/a11y-colorblind.png" tag="Screenshot of the color blind plugin for Figma" />
+<img class="wide" src="/static/img/a11y-colorblind.png" alt="Screenshot of the color blind plugin for Figma" />
 
 It's easiest to create a separate accessibility page and run the plugin from there. That way old versions can be kept for comparison without making the main "working" page too cluttered.
 
@@ -32,7 +33,7 @@ It's easiest to create a separate accessibility page and run the plugin from the
 
 [Able](https://www.figma.com/c/plugin/734693888346260052/Able-%E2%80%93-Friction-free-accessibility) is a great option for checking the contrast of text. Select two layers and the plugin will tell you what the values are and whether it passes [WCAG accessibility guidelines](https://www.w3.org/TR/WCAG20/) or not.
 
-<img class="wide" src="/static/img/a11y-able.png" tag="Screenshot of the Able plugin for figma" />
+<img class="wide" src="/static/img/a11y-able.png" alt="Screenshot of the Able plugin for figma" />
 
 **Alternatives**
 
@@ -53,7 +54,7 @@ I often use color palette generators in combination with Figma's accessibility p
 
 [Colorable](https://colorable.jxnblk.com/) is really useful one for that. It randomizes predefined color combinations and includes pass/fail scores for the WCAG accessibility guidelines.
 
-<img class="wide" src="/static/img/a11y-colorable.png" tag="Screenshot of colorable" />
+<img class="wide" src="/static/img/a11y-colorable.png" alt="Screenshot of colorable" />
 
 Instead of using the randomization functionality, you can also paste your own color codes, or modify the hue, saturation and lightness.
 
@@ -63,7 +64,7 @@ The scores get live-updated accordingly, so it's a very easy and user-friendly w
 
 Another good color generator is [Khroma](http://khroma.co/). It generates an infinite amount of color combinations based on colors you like, and also includes values with regards to the WCAG. 
 
-<img class="wide" src="/static/img/a11y-khorma.png" tag="Screenshot of Khroma" />
+<img class="wide" src="/static/img/a11y-khorma.png" alt="Screenshot of Khroma" />
 
 They do still show combinations that fail the guidelines, so make sure to always double-check the values in the info panel.
 

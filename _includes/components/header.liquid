@@ -1,0 +1,14 @@
+<header>
+    <div class="personal-info">
+        {% if pageId != "front" %}
+            <p class="rainbow-text-simple-2" id="full-name">
+                <a href="/">Sarah L. Fossheim</a>
+            </p>
+        {% endif %}
+        <p class="rainbow-text-simple" id="contact-email">
+            <a href="mailto:sarah@fossheim.io">sarah@fossheim.io</a>
+        </p>
+    </div>
+    
+    {% include components/navigation.liquid %}
+</header>

@@ -2,6 +2,7 @@
 pageTitle: 'An intro to designing accessible data visualizations'
 categories: ['design', 'data', 'accessibility']
 date: '2020-01-12'
+featured: "2020-02-05"
 title: 'An intro to designing accessible data visualizations'
 excerpt: "10 dos and don'ts for designing accessible data visualizations, including real-life examples and resources"
 image: "http://fossheim.io/static/img/a11y-dataviz-overview.png"
@@ -36,11 +37,11 @@ While color is a good way to distinguish between different types of data, relyin
 
 Let's use [this example](https://podio.com/site/creative-routines) of the daily routines of creative people.
 
-<img class="wide" src="/static/img/a11y-dataviz-bad-1.png" tag="Screenshot of a visualization with lots of colors" />
+<img class="wide" src="/static/img/a11y-dataviz-bad-1.png" alt="Screenshot of a visualization with lots of colors" />
 
 To me, at first glance it looks like a pretty visualization, but this is what it looks like to people with deuteranopia *(green-blind)* and achromatopsia *(monochromacy)*. Some of the colors end up looking exactly the same, and without any proper labels or other visual cues it's hard to see what they actually represent. 
 
-<img class="wide" src="/static/img/a11y-dataviz-bad-2.png" tag="Screenshot of a visualization as it is seen for colorblind people, where the contrast is mostly gone" />
+<img class="wide" src="/static/img/a11y-dataviz-bad-2.png" alt="Screenshot of a visualization as it is seen for colorblind people, where the contrast is mostly gone" />
 
 The live example does have hover effects which include that info, so the context is not completely lost, but generally speaking [hiding information behind hovers](https://accessuse.eu/en/Content-hover-focus.html) can be bad for accessibility as well.
 
@@ -64,7 +65,7 @@ Before making any visualizations, try to understand both the data and how/under 
 
 A good example of this is Clue, the period tracking app. They have a lot of data they can visualize, but split it up in function of what the user is trying to achieve.
 
-<img class="wide" src="/static/img/a11y-dataviz-clue-2.png" tag="Screenshot of the Clue homescreen: shows where in the current cycle you are (period, ovulation, pms), when the different stages of th period are predicted to happen this cycle, and which days you logged data" />
+<img class="wide" src="/static/img/a11y-dataviz-clue-2.png" alt="Screenshot of the Clue homescreen: shows where in the current cycle you are (period, ovulation, pms), when the different stages of th period are predicted to happen this cycle, and which days you logged data" />
 
 On the home screen, they highlight the current date and important events in the current cycle (bleeding/period, ovulation and fertile period). And they do so using color, symbols and words.
 
@@ -72,7 +73,7 @@ They also use a lot of whitespace everywhere, which makes the important info sta
 
 They do use colored without labels representing the kind of data that's tracked each day, but it's possible to view more info about them by expanding the entry. 
 
-<img class="wide" src="/static/img/a11y-dataviz-clue-1.png" tag="Screenshot of the Clue detailed screens: for each day it shows an overview of the data you tracked, in two different views: one with all data you could possibly track where the data you actually tracked is highlighted (you can add or remove data here) and a view where it just shows a list with all categories and symptoms you tracked (for example: 'Mood: Sensitive' and 'Bleeding: High')" />
+<img class="wide" src="/static/img/a11y-dataviz-clue-1.png" alt="Screenshot of the Clue detailed screens: for each day it shows an overview of the data you tracked, in two different views: one with all data you could possibly track where the data you actually tracked is highlighted (you can add or remove data here) and a view where it just shows a list with all categories and symptoms you tracked (for example: 'Mood: Sensitive' and 'Bleeding: High')" />
 
 Generally speaking I'm not a fan of hiding data this way, but whether or not you had a headache three days ago is not the most important information you need to see on the first page of a period tracking app.
 
@@ -88,7 +89,7 @@ Also check the contrast of both the colors and text used in graphs. This is espe
 
 When visualizing any data, it's important to use labels and legends. Try to add the labels in context, if possible. A good example of this is Apple Health.
 
-<img class="wide" src="/static/img/a11y-dataviz-apple-1.png" tag="Apple Health screenshot: compares the activity of the current week with the previous week, using bar charts that also include labels with the exact values and summaries" />
+<img class="wide" src="/static/img/a11y-dataviz-apple-1.png" alt="Apple Health screenshot: compares the activity of the current week with the previous week, using bar charts that also include labels with the exact values and summaries" />
 
 
 They write the actual values on top of the bars in their charts. The bars give the users a good visual clue as to what the data means. But seeing the values written out also means that:
@@ -104,13 +105,13 @@ A good real-life example I encountered a while ago is how the Google Maps app vi
 
 Both my girlfriend and I had Google Maps open while in the taxi, trying to calculate when we'd arrive at the airport. And to be honest, it's the way the way the app communicated its data to us that actually helped me calm down and relax.
 
-<img class="wide" src="/static/img/a11y-dataviz-google-1.png" tag="Google Maps screenshot showing the traffic situation with words and visualizations" />
+<img class="wide" src="/static/img/a11y-dataviz-google-1.png" alt="Google Maps screenshot showing the traffic situation with words and visualizations" />
 
 They didn't just show the map and an estimated time, and they didn't just highlight where the traffic jam was. Instead, they explained everything using symbols, graphs and full sentences. The app told us that the traffic was caused by an accident, and exactly how much time was added to our estimation because of it.
 
 We didn't have to interpret any charts (despite them being there) to figure out whether the estimated arrival time was taking the accident into account or not. It was just written out for us in easy-to-understand English sentences, as if a person was explaining it to us. We even got a notification telling us something along the lines of *"don't worry, the traffic is bad now but it's about to get better".*
 
-<img class="wide" src="/static/img/a11y-dataviz-google-2.png" tag="Google Maps screenshot showing the business of a restaurant with words and visualizations" />
+<img class="wide" src="/static/img/a11y-dataviz-google-2.png" alt="Google Maps screenshot showing the business of a restaurant with words and visualizations" />
 
 This is also in line with the [designing for accessibility](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/) guidelines. Amongst other things, they recommend explaining things to help people with anxiety, and writing in plain language to help people who are D/deaf or on the autism spectrum.
 
@@ -118,7 +119,7 @@ For those with dyslexia, graphs might work better than text, which Google Maps p
 
 Apple Health also summarizes each graph in a sentence or two, and Clue provides suggestions based on recently tracked data or reoccurring symptoms.
 
-<img class="wide" src="/static/img/a11y-dataviz-clue-3.png" tag="Screenshot of Clue using recently tracked symptoms or recurring patterns to give users suggestions on treatment" />
+<img class="wide" src="/static/img/a11y-dataviz-clue-3.png" alt="Screenshot of Clue using recently tracked symptoms or recurring patterns to give users suggestions on treatment" />
 
 ## Additional tips
 

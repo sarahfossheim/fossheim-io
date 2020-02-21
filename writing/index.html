@@ -1,30 +1,15 @@
 ---
 layout: layout.liquid
-pageTitle: All posts
+pageTitle: 📝 Writing
 pageId: writing
 ---
 
-{% if collections.posts.length > 0 %}
-    {% assign sorted_posts = collections.posts | reverse %}
-    {% for post in sorted_posts %}
-        <section class="posts-list-item">
-            <p>
-                {{post.data.date}}
-            </p>
-            <h2>
-                <a href="{{post.url}}">
-                    {{post.data.pageTitle}}
-                </a>
-            </h2>
-            <p class="categories">
-                {% for cat in post.data.categories %}
-                    <span>
-                        {{cat}}
-                    </span>
-                {% endfor %}
-            </p>
-        </section>
-    {% endfor %}
-{% else %}
-    <p>No posts to show yet 😭</p>
-{% endif %}
+{% include components/highlighted.liquid posts: collections.featuredPosts, label: "Featured post", limit: 4 %}
+
+{% include components/postlist.liquid posts:collections.sortedPosts limit: 3 %}
+
+{% include components/patreon.liquid %}
+
+{% include components/postlist.liquid posts:collections.sortedPosts limit: 3 offset: 3 %}
+
+{% include components/ctalink.liquid link: "./archive", label: "View all posts" %}

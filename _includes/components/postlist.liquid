@@ -1,0 +1,21 @@
+<div class="post-list">
+    {% for post in posts limit: limit offset: offset%}
+        <div class="posts-list-item">
+            <p>
+                {{post.data.date}}
+            </p>
+            <h2>
+                <a href="{{post.url}}">
+                    {{post.data.pageTitle}}
+                </a>
+            </h2>
+            <p class="categories">
+                {% for cat in post.data.categories %}
+                    <span>
+                        {{cat}}
+                    </span>
+                {% endfor %}
+            </p>
+        </div>
+    {% endfor %}
+</div>
