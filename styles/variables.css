@@ -19,6 +19,7 @@
     --code-block-bg: #ece3e1;
 
     --text-size-base: 24px;
+    --text-size-xlarge: 5.2rem;
     --text-size-default: 1rem;
     --text-size-large: 1.5rem;
     --text-size-small: 0.75rem;
@@ -31,8 +32,11 @@
     --color-post-4: #CCE6C9;
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 750px) {
     :root {
-        --text-size-base: 22px;
+        --text-size-base: 20px;
+        --text-size-small: 0.9rem;
+        --text-size-xsmall: 0.75rem;    
+        --text-size-xlarge: 3rem;
     }
 }
