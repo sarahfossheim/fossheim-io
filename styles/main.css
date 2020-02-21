@@ -270,7 +270,7 @@ main p#location {
 }
 
 #writing main .posts-block  {
-    margin-bottom: 3em;
+    margin-bottom: 0;
 }
 
 #writing main .latest {
