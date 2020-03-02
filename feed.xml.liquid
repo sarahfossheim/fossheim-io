@@ -1,0 +1,31 @@
+---
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sarah Fossheim: Blog</title>
+	<subtitle></subtitle>
+	<link href="http://fossheim.io/feed.xml" rel="self"/>
+	<link href="http://fossheim.io/"/>
+	<updated>{{collections.sortedPosts[0].date}}</updated>
+	<id>http://fossheim.io</id>
+	<author>
+    <name>Sarah Fossheim</name>
+    <email>sarah@fossheim.io</email>
+  </author>
+  
+  <posts>
+    {% for post in collections.sortedPosts %}
+      <entry>
+          <title>{{ post.data.title }}</title>
+          <link href="http://fossheim.io/{{post.url}}"/>
+          <updated>{{ post.date }}</updated>
+          <id>http://fossheim.io/{{post.url}}</id>
+          <content type="html"><![CDATA[
+            {{ post.templateContent | safe }}
+          ]]></content>
+      </entry>
+	  {% endfor %}
+  </posts>
+</feed>
+
