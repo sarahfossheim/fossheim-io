@@ -11,6 +11,7 @@
     "@11ty/eleventy": "^0.9.0"
   },
   "dependencies": {
-    "eleventy-plugin-seo": "^0.4.3"
+    "eleventy-plugin-seo": "^0.4.3",
+    "eleventy-xml-plugin": "^0.1.0"
   }
 }

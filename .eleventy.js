@@ -1,9 +1,12 @@
 const pluginSEO = require("eleventy-plugin-seo");
+const xmlFiltersPlugin = require('eleventy-xml-plugin')
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
   eleventyConfig.addPassthroughCopy('static');
   eleventyConfig.addPassthroughCopy('favicon.ico');
+  eleventyConfig.addPlugin(xmlFiltersPlugin)
   eleventyConfig.addPlugin(pluginSEO, {
     title: "Sarah L. Fossheim",
     description: "I'm a multidisciplinary developer and designer, with a strong interest in data science, AI, ethics and accessibility.",
