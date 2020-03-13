@@ -1,9 +1,9 @@
 ---
 template: post.liquid
 pageTitle: "How to create an accordion hover effect with box-shadows"
-date: '2020-03-07'
+date: '2020-03-13'
 categories: ['css', 'front-end', 'tutorial']
-featured: "2020-03-07"
+featured: "2020-03-13"
 title: "How to create an accordion hover effect with box-shadows"
 excerpt: "Step-by-step tutorial on how to create a rainbow accordion animation in CSS, using only box-shadows-"
 image: "https://fossheim.io/static/img/css-box-shadow-animation-static.png"
