@@ -195,6 +195,11 @@ This gives us our desired end result:
   (<a href='https://codepen.io/fossheim'>@fossheim</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
+<iframe height="420" class="wide" scrolling="no" title="Rainbow borders" src="https://codepen.io/fossheim/embed/abOYqKY?height=334&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/fossheim/pen/abOYqKY'>Rainbow borders</a> by Sarah Fossheim
+  (<a href='https://codepen.io/fossheim'>@fossheim</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
+
 <iframe height="420" class="wide" scrolling="no" title="Rainbow stacked accordion animation 6" src="https://codepen.io/fossheim/embed/abOVjJv?height=265&theme-id=light&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/fossheim/pen/abOVjJv'>Rainbow stacked accordion animation 6</a> by Sarah Fossheim
   (<a href='https://codepen.io/fossheim'>@fossheim</a>) on <a href='https://codepen.io'>CodePen</a>.
