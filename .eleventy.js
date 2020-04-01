@@ -1,6 +1,9 @@
 const pluginSEO = require("eleventy-plugin-seo");
-const xmlFiltersPlugin = require('eleventy-xml-plugin')
+const xmlFiltersPlugin = require('eleventy-xml-plugin');
 
+const getSimilarCategories = function(categoriesA, categoriesB) {
+  return categoriesA.filter(Set.prototype.has, new Set(categoriesB)).length;
+}
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
@@ -25,11 +28,11 @@ module.exports = function(eleventyConfig) {
       return featuredDateB - featuredDateA;
     });
   });
-  eleventyConfig.addLiquidFilter("similarPosts", function(collection, date, categories){
+  eleventyConfig.addLiquidFilter("similarPosts", (collection, inputPath, categories) => {
     const similar = collection.filter((post) => {
-      return post.data.categories.filter(Set.prototype.has, new Set(categories)).length >= 1 && post.data.date !== date;
+      return getSimilarCategories(post.data.categories, categories) >= 1 && post.data.page.inputPath !== inputPath;
     }).sort((a,b) => {
-      return b.data.categories.filter(Set.prototype.has, new Set(categories)).length - a.data.categories.filter(Set.prototype.has, new Set(categories)).length;
+      return getSimilarCategories(b.data.categories, categories)  - getSimilarCategories(a.data.categories, categories);
     });
 
     return similar.length >= 2 ? similar : [];

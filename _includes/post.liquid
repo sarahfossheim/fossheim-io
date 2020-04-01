@@ -2,8 +2,6 @@
 layout: base.liquid
 ---
 
-<!-- <p>← <a href="/writing">Back</a></p> -->
-
 <h1>{{ pageTitle }}</h1>
 {{ content }}
 
@@ -12,7 +10,7 @@ layout: base.liquid
 {% include components/ctalink.liquid link: "/writing/archive", label: "View all posts" %}
 
 {% include components/patreon.liquid %}
-{% assign similar = collections.sortedPosts | similarPosts: date, categories limit: 2 %}
+{% assign similar = collections.sortedPosts | similarPosts: page.inputPath, categories limit: 2 %}
 {% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
 
 
