@@ -107,3 +107,4 @@ Now the only thing left is connecting this to our blog post component. I use Liq
 - [Learn Eleventy from scratch](https://piccalil.li/course/learn-eleventy-from-scratch/)
 - [Getting started with Eleventy](https://dev.to/lauragift21/getting-started-with-eleventy-4ofg)
 - [Making a simple website with Eleventy](https://www.zachleat.com/web/eleventy-tutorial-level-2/)
+- [Beginner's Guide to Eleventy](https://tatianamac.com/posts/beginner-eleventy-tutorial-parti/)
