@@ -4,27 +4,11 @@
         {% seo %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
-        <!-- <link rel="stylesheet" href="/styles/variables.css">
+        <link rel="stylesheet" href="/styles/variables.css">
         <link rel="stylesheet" href="/styles/gay.css">
         <link rel="stylesheet" href="/styles/main.css">
-        <link rel="stylesheet" href="/styles/intro.css"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800&display=swap" rel="stylesheet"> -->
-
-        <!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" async>
-        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700,800&display=swap"></noscript> -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
     </head>
-
-    {% capture maincss %}
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap');
-        {% include ../styles/variables.css %}
-        {% include ../styles/gay.css %}
-        {% include ../styles/main.css %}
-    {% endcapture %}
-
-    <style>
-        {{maincss | cssmin | safe}}
-    </style>
-
 
     <body id={{pageId}}>
         {% include components/header.liquid pageId: pageId %}
