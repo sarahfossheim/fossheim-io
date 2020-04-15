@@ -431,6 +431,16 @@ main p#location {
     margin-bottom: -1em;
 }
 
+#post main h2 a {
+    color: var(--text-color);
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+#post main h2 a:hover {
+    color: var(--red);
+}
+
 /* ---- ARCHIVE ---- */
 #archive main h1, #writing main h1, #writing main h1.similar {
     font-size: var(--text-size-small);
