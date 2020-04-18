@@ -324,12 +324,12 @@ main p#location {
 }
 
 .posts-block .posts-latest h2 a {
-    color: var(--text-color-tags);
-    /* text-decoration: underline; */
+    color: var(--text-color-tags) !important;
+    text-decoration: none !important;
 }
 
 .posts-block .posts-latest h2 a:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 .posts-block .posts-latest h2 {
