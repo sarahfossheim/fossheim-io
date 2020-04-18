@@ -50,9 +50,9 @@ background-image: linear-gradient(blue, pink); /* Shown if conic gradients are n
 background-image: conic-gradient(blue, pink); /* Shown if conic gradients are supported */
 ```
 
-## But why? 😤
+## A great way to learn CSS while having fun
 
-I agree that you shouldn't be adding css-made images to your website, but stepping out of your comfort zone and pushing the boundaries of the programming languages you already know is a great way to practice your skills.
+If you're new to front-end development or want to brush up your CSS skills, I can really recommend just finding a design you like and trying to recreate it. Whether it's a poster, a website, a piece of furniture or an old Macintosh; practice makes perfect.
 
 While making something like this, you will:
 - Think about how to break down a CSS and translate it into HTML components
@@ -60,7 +60,5 @@ While making something like this, you will:
 - Discover the possibilities of background gradients
 - Have to think about cross-browser issues and fallbacks
 - Become faster at writing CSS _(you could even give yourself a time limit as an extra challenge)_
-
-If you're new to front-end development or want to brush up your CSS skills, I can really recommend just finding a design you like and trying to recreate it. Whether it's a poster, a website, a piece of furniture or an old Macintosh; practice makes perfect.
 
 If you've made something similar, especially after following my tutorials, feel free to send me the result on [twitter](https://twitter.com/liatrisbian) or any other social media platform I'm on. I'd love to see what other people come up with. ❤️
