@@ -54,16 +54,16 @@
     :root {
         --color-mode: "dark";
 
-        --red: #B1C86B;
-        --orange: #B1C86B;
-        --yellow: #B1C86B;
-        --green: #B1C86B;
-        --blue: #B1C86B;
-        --purple: #B1C86B;
+        --red: #EF7427;
+        --orange: #EF7427;
+        --yellow: #EF7427;
+        --green: #EF7427;
+        --blue: #EF7427;
+        --purple: #EF7427;
 
-        --selection: #000000;
-        --top-accent: #000000;
-        --bottom-accent: #000000;
+        --selection: #D162A6;
+        --top-accent: #D162A6;
+        --bottom-accent: #D162A6;
 
         --body-background-color: #003035;
 
