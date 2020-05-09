@@ -361,7 +361,7 @@ body:after {
     width: 100vw;
     height: 0.7rem;
     background-image: radial-gradient(var(--bottom-accent) 35%, transparent 40%);
-    background-size: 3px 3px;
+    background-size: 4px 4px;
 }
 
 header {

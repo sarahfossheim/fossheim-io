@@ -52,6 +52,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --color-mode: "dark";
+
         --red: #B1C86B;
         --orange: #B1C86B;
         --yellow: #B1C86B;
@@ -60,8 +62,8 @@
         --purple: #B1C86B;
 
         --selection: #000000;
-        --top-accent: #EEBBBB;
-        --bottom-accent: #B1C86B;
+        --top-accent: #000000;
+        --bottom-accent: #000000;
 
         --body-background-color: #003035;
 

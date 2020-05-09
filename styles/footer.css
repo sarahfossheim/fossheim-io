@@ -45,9 +45,21 @@ footer div ul li {
     list-style-type: none;
 }
 
-@media (prefers-color-scheme: dark) {
-    footer, footer p a  {
+footer button {
+    display: block;
+    background-color: var(--code-block-bg);
+    border: none;
+    color: var(--text-color);
+    font-size: 0.65rem;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 0.25rem 0.65rem 0.35rem 0.65rem;
+    cursor: pointer;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    footer, footer p a, footer button  {
         color: var(--bottom-accent);
         border-bottom-color: var(--bottom-accent);
     }
-}
+} */

@@ -42,7 +42,7 @@
         url('/static/fonts/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
-body {
+body, footer button {
     font-family: "Roboto", sans-serif;
     font-display: swap;
 }
