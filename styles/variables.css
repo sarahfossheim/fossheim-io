@@ -6,11 +6,20 @@
     --blue: #476098;
     --purple: #A7489B;
 
+    --selection: #22D2A0;
+    --top-accent: #E1CC13;
+    --bottom-accent: #55CAE7;
+
     --body-background-color: #fff;
-    --text-color: #5A24C2; 
-    --text-color-transparent: rgba(90,36,195, 0.2);
-    --text-color-blocks: #401593; 
-    --text-color-tags: #270667;
+    /* --text-color: #2A3BDF; 
+    --text-color-transparent: rgba(42,59,223,0.2);
+    --text-color-blocks: #071381; 
+    --text-color-tags: #071381; */
+
+    --text-color: #0c412b; 
+    --text-color-transparent: rgba(12,65,43,0.2);
+    --text-color-blocks: #0c412b; 
+    --text-color-tags: #0c412b;
 
     --main-text-width: 666px;
     --main-text-width-wide: 900px;
@@ -19,7 +28,7 @@
     --code-block-bg: #ece3e1;
 
     --text-size-base: 24px;
-    --text-size-xlarge: 5.2rem;
+    --text-size-xlarge: 5rem;
     --text-size-default: 1rem;
     --text-size-large: 1.5rem;
     --text-size-small: 0.75rem;
@@ -38,5 +47,35 @@
         --text-size-small: 0.9rem;
         --text-size-xsmall: 0.75rem;    
         --text-size-xlarge: 3rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --red: #F18F43;
+        --orange: #F18F43;
+        --yellow: #F18F43;
+        --green: #F18F43;
+        --blue: #F18F43;
+        --purple: #F18F43;
+
+        --selection: #E1CC13;
+        --top-accent: #8B9862;
+        --bottom-accent: #8B9862;
+
+        --body-background-color: #003035;
+
+        --text-color: #EEBBBB; 
+        --text-color-transparent: rgba(243,228,228,0.2);
+        --text-color-blocks: #EEBBBB; 
+        --text-color-tags: #EEBBBB;
+
+        --code-block-bg: #012521;
+
+        --color-post-2: #012521;
+        --color-post-3: #012521;
+        --color-post-1: #012521;
+        --color-post-4: #012521;
+
     }
 }

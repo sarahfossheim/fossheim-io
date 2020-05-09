@@ -1,0 +1,53 @@
+/* Footer. */
+footer {
+    display: block;
+    width: var(--main-text-width-wide);
+    max-width: 90vw;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    font-size: var(--text-size-small);
+
+    border-top: var(--text-color-transparent) 1px solid;
+    overflow: hidden;
+}
+
+/* TODO: Make this a flexbox. */
+footer div {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+footer div:first-child {
+    width: 25%;
+    text-align: left;
+    float: left;
+}
+
+footer div:last-child {
+    width: 25%;
+    float: right;
+    text-align: right;
+}
+
+footer div .pronouns {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: var(--text-size-large);
+}
+
+footer div ul li {
+    list-style-type: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer, footer p a  {
+        color: var(--top-accent);
+        border-bottom-color: var(--top-accent);
+    }
+}

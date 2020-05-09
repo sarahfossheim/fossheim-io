@@ -14,3 +14,10 @@ layout: base.liquid
 {% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
 
 
+
+{% capture css %}
+    {% include ../styles/post.css %}
+{% endcapture %}
+<style>
+    {{css | safe}}
+</style>
