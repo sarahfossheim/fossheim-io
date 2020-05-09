@@ -1,0 +1,9 @@
+<button type="button" id="nightSwitch">🌚 Switch to Night Theme</button>
+
+
+{% capture js %}
+  {% include ../js/nightswitch.js %}
+{% endcapture %}
+<script>
+  {{ js | safe }}
+</script>
