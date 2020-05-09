@@ -47,7 +47,7 @@ footer div ul li {
 
 @media (prefers-color-scheme: dark) {
     footer, footer p a  {
-        color: var(--top-accent);
-        border-bottom-color: var(--top-accent);
+        color: var(--bottom-accent);
+        border-bottom-color: var(--bottom-accent);
     }
 }
