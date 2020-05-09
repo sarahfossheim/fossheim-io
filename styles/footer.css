@@ -13,29 +13,23 @@ footer {
     font-size: var(--text-size-small);
 
     border-top: var(--text-color-transparent) 1px solid;
-    overflow: hidden;
 }
 
-/* TODO: Make this a flexbox. */
-footer div {
-    width: 50%;
-    float: left;
-    text-align: center;
+footer .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3.5rem;
 }
 
-footer div:first-child {
-    width: 25%;
-    text-align: left;
-    float: left;
-}
-
-footer div:last-child {
-    width: 25%;
-    float: right;
+.connect {
     text-align: right;
 }
 
-footer div .pronouns {
+.pronouns-container {
+    text-align: center;
+}
+
+.pronouns {
     text-transform: uppercase;
     font-weight: 900;
     font-size: var(--text-size-large);
@@ -45,16 +39,35 @@ footer div ul li {
     list-style-type: none;
 }
 
-footer button {
+
+button#nightSwitch {
     display: block;
     background-color: var(--code-block-bg);
     border: none;
     color: var(--text-color);
     font-size: 0.65rem;
     text-align: left;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 0.25rem 0.65rem 0.35rem 0.65rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    footer .content {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    footer .pronouns-container, footer .connect {
+        text-align: left;
+    }
+
+    button#nightSwitch {
+        width: 90vw;
+        padding: 1rem;
+        margin-top: 2.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 /* @media (prefers-color-scheme: dark) {

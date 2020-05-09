@@ -594,24 +594,6 @@ main p#location {
         width: 100%;
         max-width: 100%;
     }
-
-    footer div {
-        float: none;
-        text-align: left;
-        width: 80%;
-        margin-bottom: 2em;
-    }
-
-    footer div:first-child {
-        width: 80%;
-        float: none;
-    }
-    
-    footer div:last-child {
-        float: none;
-        text-align: left;
-        width: 80%;
-    }
 }
 
 @media screen and (max-width: 750px) {
