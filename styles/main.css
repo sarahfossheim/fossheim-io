@@ -599,7 +599,7 @@ main p#location {
 @media screen and (max-width: 750px) {
     #front main h1 {
         margin-top: -100px;
-        width: 300px;
+        width: 15.5rem;
         background-size: 95%;
         margin-bottom: 1rem;
     }
