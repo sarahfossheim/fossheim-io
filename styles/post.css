@@ -91,3 +91,23 @@
 #post main .cta-link {
     margin-bottom: calc(var(--text-size-large) * 2);
 }
+
+@media screen and (max-width: 900px) {
+    #post main .wide {
+        width: 80vw;
+        max-width: var(--main-text-width);
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    #post main pre {
+        width: 80vw;
+        max-width: var(--main-text-width);
+        position: static;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

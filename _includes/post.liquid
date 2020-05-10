@@ -9,7 +9,7 @@ layout: base.liquid
 <hr>
 {% include components/ctalink.liquid link: "/writing/archive", label: "View all posts" %}
 
-{% include components/patreon.liquid %}
+{% include components/about.liquid %}
 {% assign similar = collections.sortedPosts | similarPosts: page.inputPath, categories limit: 2 %}
 {% include components/highlighted.liquid posts: similar, label: "Similar post", limit: 2 %}
 

@@ -31,10 +31,14 @@
 
     --code-block-bg: #ece3e1;
 
-    --color-post-2: #F3CFCD;
-    --color-post-3: #EDE389;
-    --color-post-1: #C7EEEC;
-    --color-post-4: #CCE6C9;
+    --color-post-1: #FFF;
+    --color-post-2: #FFF;
+    --color-post-3: #FFF;
+    --color-post-4: #FFF;
+    --color-post-border-1: #22D2A0;
+    --color-post-border-2: #E1CC13;
+    --color-post-border-3: #FD9065;
+    --color-post-border-4: #55CAE7;
 }
 
 @media screen and (max-width: 750px) {
@@ -77,5 +81,8 @@
     --color-post-3: #012521;
     --color-post-1: #012521;
     --color-post-4: #012521;
-
+    --color-post-border-1: #D162A6;
+    --color-post-border-2: #D162A6;
+    --color-post-border-3: #D162A6;
+    --color-post-border-4: #D162A6;
 }

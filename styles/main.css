@@ -278,66 +278,6 @@ main p#location {
     margin-bottom: 0em;
 }
 
-.posts-block {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: var(--text-size-large);
-}
-
-.posts-block .posts-latest {
-    width: 100%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    max-width: 440px;
-    max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
-    min-height: 250px;
-    background-color: #c1ecd8;
-    padding: var(--text-size-large);
-    margin-bottom: 10px;
-}
-
-.posts-block .posts-latest:nth-child(1) {
-    background-color: var(--color-post-1);
-}
-
-.posts-block .posts-latest:nth-child(2) {
-    background-color: var(--color-post-2);
-}
-
-.posts-block .posts-latest:nth-child(3) {
-    background-color: var(--color-post-3); 
-}
-
-.posts-block .posts-latest:nth-child(4) {
-    background-color: var(--color-post-4);
-}
-
-.posts-block .posts-latest p {
-    color: var(--text-color-tags);
-    font-size: var(--text-size-xsmall);
-    text-transform: uppercase;
-    font-weight: 600;
-    opacity: 0.75;
-    margin-bottom: 0;
-}
-
-.posts-block .posts-latest h2 a {
-    color: var(--text-color-tags) !important;
-    text-decoration: none !important;
-}
-
-.posts-block .posts-latest h2 a:hover {
-    text-decoration: underline !important;
-}
-
-.posts-block .posts-latest h2 {
-    font-size: var(--text-size-medium);
-    margin-top: 0;
-}
-
 #writing main h1, .similar {
     width: var(--main-text-width);
     margin-left: auto;
@@ -348,14 +288,6 @@ main p#location {
     font-size: var(--text-size-large);
     margin-top: 0em;
     margin-bottom: 0.25em;
-}
-
-.posts-block .posts-latest p.categories {
-    margin-top: 0.5em;
-}
-
-.posts-block .posts-latest p.categories span {
-    margin-right: 1em;
 }
 
 /* ---- CTA LINK ---- */
@@ -514,40 +446,11 @@ main p#location {
         left: 0;
         position: static;
     }
-
-    .wide.posts-block .posts-latest {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .posts-block .posts-latest {
-        max-width: 100%;
-        min-height: 50px;
-    }
-
-    .wide .posts-latest {
-        margin-left: 5vw;
-    }
 }
 
 @media screen and (max-width: 900px) {
     header p#contact-email, header p#job-title  {
         display: none;
-    }
-
-    #post main .wide {
-        width: 80vw;
-        max-width: var(--main-text-width);
-        position: relative;
-        
-    }
-
-    #post main pre {
-        width: 80vw;
-        max-width: var(--main-text-width);
-        position: static;
-        left: 0;
     }
 
     header {
@@ -581,7 +484,7 @@ main p#location {
         margin-top: 350px;
     }
 
-    #post .wide.posts-block {
+    /* #post .wide.posts-block {
         width: 100%;
         max-width: 100%;
         margin-left: auto;
@@ -593,7 +496,7 @@ main p#location {
     .posts-latest {
         width: 100%;
         max-width: 100%;
-    }
+    } */
 }
 
 @media screen and (max-width: 750px) {
