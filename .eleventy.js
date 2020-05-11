@@ -7,9 +7,10 @@ const getSimilarCategories = function(categoriesA, categoriesB) {
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
+  eleventyConfig.addPassthroughCopy('js');
   eleventyConfig.addPassthroughCopy('static');
   eleventyConfig.addPassthroughCopy('favicon.ico');
-  eleventyConfig.addPlugin(xmlFiltersPlugin)
+  eleventyConfig.addPlugin(xmlFiltersPlugin);
   eleventyConfig.addPlugin(pluginSEO, {
     title: "Sarah L. Fossheim",
     description: "I'm a multidisciplinary developer and designer, with a strong interest in data science, AI, ethics and accessibility.",

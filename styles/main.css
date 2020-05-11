@@ -28,14 +28,13 @@ body {
     background-color: var(--body-background-color);
     color: var(--text-color);
 
-    font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+    font-family: sans-serif;
     font-size: var(--text-size-default);
 }
 
 /* Style the selected text and elements. */
 ::selection{
-    background-color: var(--red);
-    color: var(--body-background-color);
+    background-color: var(--selection);
 }
 
 /* Global elements. */
@@ -66,11 +65,11 @@ header {
 
 header p#full-name {
     display: block;
-    width: 170px;
+    width: 7rem;
 
     margin-top: 30px;
 
-    font-size: var(--text-size-large);
+    font-size: calc(var(--text-size-large) - 0.25rem);
     font-weight: 700;
     letter-spacing: 0.5px;
     line-height: 1.15em;
@@ -81,14 +80,22 @@ header p#full-name a, header p#contact-email a {
 }
 
 header p#contact-email {
-    font-weight: 700;
-    width: 230px;
     transform: rotate(90deg);
-    
+    bottom: 6.75rem;
+    right: -2.75rem;
+    width: 10.25rem;
     position: fixed;
-    bottom: 115px;
-    right: -66px;
 }
+
+header p#job-title {
+    width: 11.7rem;
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 8.25rem;
+    left: -3.4rem;
+    text-align: right;
+}
+
 
 /* Style the navigation. */
 header nav {
@@ -239,19 +246,13 @@ main p#location {
 }
 
 /* ---- FRONT PAGE ---- */
-#front header #full-name {
-    display: none;
-}
-
 #front main h1 {
     font-size: 125px;
     font-size: var(--text-size-xlarge);
     line-height: 130px;
     line-height:  calc(var(--text-size-xlarge) + 5px);
-    font-weight: 700;
-    width: 600px;
+    width: var(--main-text-width);
     margin-bottom: 75px;
-
     background-size: 580px;
 }
 
@@ -277,66 +278,6 @@ main p#location {
     margin-bottom: 0em;
 }
 
-.posts-block {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: var(--text-size-large);
-}
-
-.posts-block .posts-latest {
-    width: 100%;
-    flex-grow: 0;
-    flex-shrink: 0;
-    max-width: 440px;
-    max-width: calc(calc(var(--main-text-width-wide) / 2) - 5px);
-    min-height: 250px;
-    background-color: #c1ecd8;
-    padding: var(--text-size-large);
-    margin-bottom: 10px;
-}
-
-.posts-block .posts-latest:nth-child(1) {
-    background-color: var(--color-post-1);
-}
-
-.posts-block .posts-latest:nth-child(2) {
-    background-color: var(--color-post-2);
-}
-
-.posts-block .posts-latest:nth-child(3) {
-    background-color: var(--color-post-3); 
-}
-
-.posts-block .posts-latest:nth-child(4) {
-    background-color: var(--color-post-4);
-}
-
-.posts-block .posts-latest p {
-    color: var(--text-color-tags);
-    font-size: var(--text-size-xsmall);
-    text-transform: uppercase;
-    font-weight: 600;
-    opacity: 0.75;
-    margin-bottom: 0;
-}
-
-.posts-block .posts-latest h2 a {
-    color: var(--text-color-tags) !important;
-    text-decoration: none !important;
-}
-
-.posts-block .posts-latest h2 a:hover {
-    text-decoration: underline !important;
-}
-
-.posts-block .posts-latest h2 {
-    font-size: var(--text-size-medium);
-    margin-top: 0;
-}
-
 #writing main h1, .similar {
     width: var(--main-text-width);
     margin-left: auto;
@@ -347,14 +288,6 @@ main p#location {
     font-size: var(--text-size-large);
     margin-top: 0em;
     margin-bottom: 0.25em;
-}
-
-.posts-block .posts-latest p.categories {
-    margin-top: 0.5em;
-}
-
-.posts-block .posts-latest p.categories span {
-    margin-right: 1em;
 }
 
 /* ---- CTA LINK ---- */
@@ -491,31 +424,7 @@ main p#location {
     margin-bottom: 0.25em;
 }
 
-
 /* ---- POSTS PAGE ---- */
-#post main pre, #post main iframe, #post main img {
-    margin-bottom: 1.5em;
-}
-
-
-#post main pre {
-    overflow-x: scroll;
-    color: var(--text-color-blocks);
-    background-color: var(--code-block-bg);
-
-    width: 100%;
-    width: var(--main-text-width-wide);
-    position: relative;
-    left: -117px;
-    padding: 1em 1.5em;
-    box-sizing: border-box;
-}
-
-#post main pre code {
-    font-size: var(--text-size-small);
-    white-space: pre-wrap;
-}
-
 .wide {
     width: 100%;
     width: var(--main-text-width-wide);
@@ -524,150 +433,24 @@ main p#location {
     padding: 0;
 }
 
-#post main h2, #post main h3, #post main h4, #post main h5 {
-    font-weight: 600;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
-}
-
-#post main .posts-block .posts-latest h2 {
-    margin: 0;
-}
-
-#post main h2 {
-    font-size: 1.35em;
-}
-
-#post main *:not(pre) code {
-    background-color: var(--code-block-bg);
-    color: var(--text-color-blocks);
-    font-size: var(--text-size-small);
-    padding: 0.25em;
-}
-
-#post main ul, #post main ol {
-    margin-bottom: 1.5em;
-    margin-left: 1em;
-}
-
-#post main ul li, #post main ol li {
-    margin-bottom: 0.5em;
-}
-#post main ul li ul, #post main ol li ul, #post main ol li ol, #post main ul li ol {
-    margin-top: 0.5em;
-}
-
-#post main hr {
-    margin: 4em 0;
-    border: 0;
-    border-top: 1px solid var(--text-color-transparent);
-}
-
-#post main .cta-link {
-    margin-bottom: calc(var(--text-size-large) * 2);
-}
-
-/* Footer. */
-footer {
-    display: block;
-    width: var(--main-text-width-wide);
-    max-width: 90vw;
-    
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-top: 5em;
-    padding-bottom: 5em;
-
-    font-size: var(--text-size-small);
-
-    border-top: var(--text-color-transparent) 1px solid;
-    overflow: hidden;
-}
-
-/* TODO: Make this a flexbox. */
-footer div {
-    width: 50%;
-    float: left;
-    text-align: center;
-}
-
-footer div:first-child {
-    width: 25%;
-    text-align: left;
-    float: left;
-}
-
-footer div:last-child {
-    width: 25%;
-    float: right;
-    text-align: right;
-}
-
-footer div .pronouns {
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 28px;
-}
-
-footer div ul li {
-    list-style-type: none;
-}
-
 @media screen and (max-width: 1125px) {
+    header p#contact-email {
+        right: -3.75rem;
+    }
+    header p#job-title {
+        left: -4.5rem;
+    }
+
     .wide, #post main pre  {
         width: 100%;
         left: 0;
         position: static;
     }
-
-    .wide.posts-block .posts-latest {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-
-    .posts-block .posts-latest {
-        max-width: 100%;
-        min-height: 50px;
-    }
-
-    .wide .posts-latest {
-        margin-left: 5vw;
-    }
-}
-
-@media screen and (max-width: 1048px) {
-    header p#contact-email {
-        right: -90px;
-    }
 }
 
 @media screen and (max-width: 900px) {
-    header p#contact-email {
+    header p#contact-email, header p#job-title  {
         display: none;
-    }
-
-    header p#full-name {
-        font-size: var(--text-size-large);
-        width: 170px;
-        margin-left: 0vw;
-        z-index: 1;
-        position: relative;
-    }
-
-    #post main .wide {
-        width: 80vw;
-        max-width: var(--main-text-width);
-        position: relative;
-        
-    }
-
-    #post main pre {
-        width: 80vw;
-        max-width: var(--main-text-width);
-        position: static;
-        left: 0;
     }
 
     header {
@@ -701,7 +484,7 @@ footer div ul li {
         margin-top: 350px;
     }
 
-    #post .wide.posts-block {
+    /* #post .wide.posts-block {
         width: 100%;
         max-width: 100%;
         margin-left: auto;
@@ -713,31 +496,13 @@ footer div ul li {
     .posts-latest {
         width: 100%;
         max-width: 100%;
-    }
-
-    footer div {
-        float: none;
-        text-align: left;
-        width: 80%;
-        margin-bottom: 2em;
-    }
-
-    footer div:first-child {
-        width: 80%;
-        float: none;
-    }
-    
-    footer div:last-child {
-        float: none;
-        text-align: left;
-        width: 80%;
-    }
+    } */
 }
 
 @media screen and (max-width: 750px) {
     #front main h1 {
         margin-top: -100px;
-        width: 300px;
+        width: 15.5rem;
         background-size: 95%;
         margin-bottom: 1rem;
     }

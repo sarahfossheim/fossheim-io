@@ -4,10 +4,14 @@
         {% seo %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
-        <link rel="stylesheet" href="/styles/variables.css">
-        <link rel="stylesheet" href="/styles/gay.css">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800&display=swap" rel="stylesheet">
+
+        {% capture css %}
+            {% include ../styles/variables.css %}
+            {% include ../styles/main.css %}
+        {% endcapture %}
+        <style>
+            {{css | safe}}
+        </style>
     </head>
 
     <body id={{pageId}}>
@@ -18,5 +22,13 @@
         </main>
 
         {% include components/footer.liquid %}
+
+        {% capture css %}
+            {% include ../styles/gay.css %}
+            {% include ../styles/fonts.css %}
+        {% endcapture %}
+        <style>
+            {{css | safe}}
+        </style>
     </body>
 </html>

@@ -1,0 +1,91 @@
+.posts-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+    margin-bottom: var(--text-size-large);
+}
+
+.posts-block .posts-latest {
+    background-image: radial-gradient(var(--color-post-border-1) 35%, transparent 35%);
+    background-size: 4px 4px;
+    min-height: 250px;
+    padding: 20px;
+    position: relative;
+}
+
+.posts-block .posts-latest .inner {
+    background-color: var(--color-post-1);
+    padding: 1.25rem;
+    border: 2px solid var(--color-post-border-1);
+    border-radius: 1px;
+}
+
+.posts-block .posts-latest:nth-child(2) {
+    background-image: radial-gradient(var(--color-post-border-2) 35%, transparent 35%);
+    background-size: 4px 4px;
+}
+
+.posts-block .posts-latest:nth-child(2) .inner {
+    border-color: var(--color-post-border-2);
+}
+
+.posts-block .posts-latest:nth-child(3) {
+    background-image: radial-gradient(var(--color-post-border-3) 35%, transparent 35%);
+    background-size: 4px 4px;
+}
+
+.posts-block .posts-latest:nth-child(3) .inner {
+    border-color: var(--color-post-border-3);
+}
+
+.posts-block .posts-latest:nth-child(4) {
+    background-image: radial-gradient(var(--color-post-border-4) 35%, transparent 35%);
+    background-size: 4px 4px;
+}
+
+.posts-block .posts-latest:nth-child(4) .inner {
+    border-color: var(--color-post-border-4);
+}
+
+.posts-block .posts-latest p {
+    color: var(--text-color-tags);
+    font-size: var(--text-size-xsmall);
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.75;
+    margin-bottom: 0;
+}
+
+.posts-block .posts-latest h2 a {
+    color: var(--text-color-tags) !important;
+    text-decoration: none !important;
+}
+
+.posts-block .posts-latest h2 a:hover {
+    text-decoration: underline !important;
+}
+
+.posts-block .posts-latest h2 {
+    font-size: var(--text-size-medium);
+    margin-top: 0;
+}
+
+.posts-block .posts-latest p.categories {
+    margin-top: 0.5em;
+}
+
+.posts-block .posts-latest p.categories span {
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 1125px) {
+    .posts-block {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .posts-block .posts-latest {
+        min-height: 50px;
+    }
+}

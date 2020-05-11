@@ -345,3 +345,25 @@ _::-webkit-full-page-media, _:future, :root .rainbow-text:hover {
     }
 }
 
+body:before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 0.7rem;
+    background-image: radial-gradient(var(--top-accent) 35%, transparent 40%);
+    background-size: 4px 4px;
+    margin-bottom: 0.7rem;
+}
+
+body:after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 0.7rem;
+    background-image: radial-gradient(var(--bottom-accent) 35%, transparent 40%);
+    background-size: 4px 4px;
+}
+
+header {
+    top: 0.7rem;
+}
