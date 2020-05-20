@@ -1,6 +1,6 @@
 ---
 pageTitle: 'Tools for designing good-looking accessible interfaces'
-categories: ['design', 'figma', 'accessibility']
+categories: ['design', 'figma', 'a11y']
 featured: "2020-02-06"
 date: '2019-12-21'
 title: 'Tools for designing good-looking accessible interfaces'

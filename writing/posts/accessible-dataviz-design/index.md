@@ -1,6 +1,6 @@
 ---
 pageTitle: 'An intro to designing accessible data visualizations'
-categories: ['design', 'data', 'accessibility']
+categories: ['design', 'data', 'a11y']
 date: '2020-01-12'
 featured: "2020-02-05"
 title: 'An intro to designing accessible data visualizations'

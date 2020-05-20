@@ -49,6 +49,13 @@
     padding: 0;
 }
 
+#post main audio {
+    display: block;
+    min-width: 300px;
+    width: 60%;
+    margin: 0 auto 1.5rem auto;
+}
+
 #post main h2, #post main h3, #post main h4, #post main h5 {
     font-weight: 600;
     margin-bottom: 1.5em;
