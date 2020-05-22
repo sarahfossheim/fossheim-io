@@ -222,7 +222,7 @@ There are a lot of different ways we can solve this, and we will definitely dive
 
 ### Solution A: Add the labels and the ticks to the same element
 
-One option could be to restructure or code, and group the days and values inside one element. The way our D3 code is structured right now, this will be the output in HTML:
+One option could be to restructure the code, and group the days and values inside one element. The way our D3 code is structured right now, this will be the output in HTML:
 
 ```html
 <svg>
