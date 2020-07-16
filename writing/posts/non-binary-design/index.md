@@ -5,7 +5,7 @@ date: "2020-07-16"
 featured: "2020-07-16"
 categories: ["technology", "inclusive design", "queer issues"]
 title: "Navigating the internet as a non-binary designer"
-excerpt: "Lots of products use language that excludes and harms non-binary and trans peole. This is an overview of relatively easy things you can change in your designs and language to be more inclusive, written by a non-binary technologist"
+excerpt: "Lots of products use language that excludes and harms non-binary and trans people. This is an overview of relatively easy things you can change in your designs and language to be more inclusive, written by a non-binary technologist"
 ---
 
 Earlier I wrote a [twitter thread](https://twitter.com/liatrisbian/status/1281978736318001152?s=21) about small things designers can do to make their products more inclusive for trans and non-binary people. It’s a topic quite close to my heart, since I am non-binary myself, so I want to address some of the points in a proper post as well.
