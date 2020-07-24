@@ -26,6 +26,7 @@ html {
 /* Set the default font and color for the body. */
 body {
     background-color: var(--body-background-color);
+    color: #0c412b;
     color: var(--text-color);
 
     font-family: sans-serif;
@@ -34,7 +35,9 @@ body {
 
 /* Style the selected text and elements. */
 ::selection{
-    background-color: var(--selection);
+    background: var(--selection);
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: var(--text-color); 
 }
 
 /* Global elements. */
@@ -48,7 +51,9 @@ header {
     box-sizing: border-box;
     display: block;
 
+    width: 80%;
     width: 80vw;
+    max-width: 900px;
     max-width: var(--main-text-width-wide); 
     height: 132px;
 
@@ -164,7 +169,9 @@ header nav ul li a:hover:before {
 
 /* Set the main container. */
 main {
+    width: 80%;
     width: 80vw;
+    max-width: 666px;
     max-width: var(--main-text-width);
     font-size: var(--text-size-default);
     line-height: 1.25em;
@@ -251,6 +258,7 @@ main p#location {
     font-size: var(--text-size-xlarge);
     line-height: 130px;
     line-height:  calc(var(--text-size-xlarge) + 5px);
+    max-width: 666px;
     width: var(--main-text-width);
     margin-bottom: 75px;
     background-size: 580px;
@@ -267,6 +275,7 @@ main p#location {
 
 /* ---- WRITING PAGE ---- */
 #writing main {
+    max-width: 666px;
     max-width: var(--main-text-width);
 }
 
@@ -279,6 +288,7 @@ main p#location {
 }
 
 #writing main h1, .similar {
+    max-width: 666px;
     width: var(--main-text-width);
     margin-left: auto;
     margin-right: auto;
@@ -292,6 +302,7 @@ main p#location {
 
 /* ---- CTA LINK ---- */
 .cta-link {
+    max-width: 666px;
     max-width: var(--main-text-width);
     margin-left: auto;
     margin-right: auto;
@@ -324,6 +335,7 @@ main p#location {
 .patreon {
     display: block;
     width: 100%;
+    max-width: 900px;
     max-width: var(--main-text-width-wide);
     /* border-radius: 3px; */
     background-color: var(--color-post-4);
@@ -385,6 +397,7 @@ main p#location {
     padding: 1.5em 0;
     border-bottom: 1px solid var(--text-color-transparent);
     position: relative;
+    max-width: 666px;
     max-width: var(--main-text-width);
     margin-left: auto;
     margin-right: auto;
@@ -427,6 +440,7 @@ main p#location {
 /* ---- POSTS PAGE ---- */
 .wide {
     width: 100%;
+    max-width: 900px;
     width: var(--main-text-width-wide);
     position: relative;
     left: -117px;
@@ -511,12 +525,15 @@ main p#location {
 
 @media screen and (max-width: 666px) {
     #post main .wide, #post main pre {
+        width: 100%;
         width: 100vw;
         position: relative;
+        left: -10%;
         left: -10vw;
     }
 
     #post main .wide .patreon {
+        width: 80%;
         width: 80vw;
         margin-left: auto;
         margin-right: auto;
@@ -529,7 +546,9 @@ main p#location {
     }
 
     #post main iframe.wide {
+        width: 90%;
         width: 90vw;
+        left: -5%;
         left: -5vw;
     }
 

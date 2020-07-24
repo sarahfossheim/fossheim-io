@@ -29,6 +29,7 @@
     background-color: var(--code-block-bg);
 
     width: 100%;
+    width: 900px;
     width: var(--main-text-width-wide);
     position: relative;
     left: -117px;
@@ -43,6 +44,7 @@
 
 .wide {
     width: 100%;
+    width: 900px;
     width: var(--main-text-width-wide);
     position: relative;
     left: -117px;
@@ -101,7 +103,9 @@
 
 @media screen and (max-width: 900px) {
     #post main .wide {
+        width: 80%;
         width: 80vw;
+        max-width: 666px;
         max-width: var(--main-text-width);
         position: relative;
         left: 0;
@@ -109,7 +113,9 @@
     }
 
     #post main pre {
+        width: 80%;
         width: 80vw;
+        max-width: 666px;
         max-width: var(--main-text-width);
         position: static;
         left: 0;

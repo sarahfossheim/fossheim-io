@@ -1,7 +1,8 @@
 /* Footer. */
 footer {
-    display: block;
+    max-width: 900px;
     width: var(--main-text-width-wide);
+    max-width: 80%;
     max-width: 80vw;
     
     margin-left: auto;

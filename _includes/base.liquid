@@ -9,6 +9,8 @@
         {% capture css %}
             {% include ../styles/variables.css %}
             {% include ../styles/main.css %}
+            {% include ../styles/gay.css %}
+            {% include ../styles/fonts.css %}
         {% endcapture %}
         <style>
             {{css | safe}}
@@ -23,13 +25,5 @@
         </main>
 
         {% include components/footer.liquid %}
-
-        {% capture css %}
-            {% include ../styles/gay.css %}
-            {% include ../styles/fonts.css %}
-        {% endcapture %}
-        <style>
-            {{css | safe}}
-        </style>
     </body>
 </html>

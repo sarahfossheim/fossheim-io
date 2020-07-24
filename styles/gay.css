@@ -348,6 +348,7 @@ _::-webkit-full-page-media, _:future, :root .rainbow-text:hover {
 body:before {
     content: "";
     display: block;
+    width: 100%;
     width: 100vw;
     height: 0.7rem;
     background-image: radial-gradient(var(--top-accent) 35%, transparent 40%);
@@ -358,6 +359,7 @@ body:before {
 body:after {
     content: "";
     display: block;
+    width: 100%;
     width: 100vw;
     height: 0.7rem;
     background-image: radial-gradient(var(--bottom-accent) 35%, transparent 40%);
