@@ -20,9 +20,11 @@
     <body id={{pageId}}>
         {% include components/header.liquid pageId: pageId %}
         
-        <main>
-            {{content}} 
-        </main>
+        <div class="main">
+            <main> 
+                {{content}} 
+            </main>
+        </div>
 
         {% include components/footer.liquid %}
     </body>

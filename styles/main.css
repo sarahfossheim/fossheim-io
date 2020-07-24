@@ -168,7 +168,7 @@ header nav ul li a:hover:before {
 }
 
 /* Set the main container. */
-main {
+.main {
     width: 80%;
     width: 80vw;
     max-width: 666px;
