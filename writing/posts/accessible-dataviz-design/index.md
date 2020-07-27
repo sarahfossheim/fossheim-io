@@ -103,7 +103,7 @@ Data visualization is more than just pretty charts. Words and language play an i
 
 A good real-life example I encountered a while ago is how the Google Maps app visualizes the traffic situation. We were on our way to the airport in Paris, running incredibly late because of train strikes and very few available taxis, and were stuck in a traffic jam. As a result, we were incredibly stressed, wondering if we'd be able to catch our plane or not.
 
-Both my girlfriend and I had Google Maps open while in the taxi, trying to calculate when we'd arrive at the airport. And to be honest, it's the way the way the app communicated its data to us that actually helped me calm down and relax.
+Both my girlfriend and I had Google Maps open while in the taxi, trying to calculate when we'd arrive at the airport. And to be honest, it's the way the app communicated its data to us that actually helped me calm down and relax.
 
 <img class="wide" src="/static/img/a11y-dataviz-google-1.png" alt="Google Maps screenshot showing the traffic situation with words and visualizations" />
 
