@@ -2,7 +2,7 @@
 template: post.liquid
 pageTitle: 'Thoughts on Genderify, gender discrimination, transphobia, and (un)ethical AI.'
 date: '2020-07-29'
-categories: ['AI', 'ethics', 'technology', 'inclusive design']
+categories: ['AI', 'ethics', 'technology', 'inclusive design', 'data']
 title: 'Thoughts on Genderify, gender discrimination, transphobia, and ethical AI.'
 excerpt: 'Tech like genderify is harmful, both because of its own biases and the possibility it gives third parties to cause (un)intentional harm to minoritized communities.'
 image: 'http://fossheim.io/static/img/ai-bias-genderify-header.png'
