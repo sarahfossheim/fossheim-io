@@ -5,7 +5,7 @@ date: '2020-07-29'
 categories: ['AI', 'ethics', 'technology', 'inclusive design', 'data']
 title: 'Thoughts on Genderify, gender discrimination, transphobia, and ethical AI.'
 excerpt: 'Tech like genderify is harmful, both because of its own biases and the possibility it gives third parties to cause (un)intentional harm to minoritized communities.'
-image: 'http://fossheim.io/static/img/ai-bias-genderify-header.png'
+image: 'https://fossheim.io/static/img/ai-bias-genderify-header.png'
 ---
 
 Earlier this week Genderify, an AI-driven platform that “identifies” users’ gender based on their name, launched and listed themselves on ProductHunt. They received **a lot** of very valid criticism both on ProductHunt and other social media, but I think they’re worthy of some more criticism from me on here as well.
