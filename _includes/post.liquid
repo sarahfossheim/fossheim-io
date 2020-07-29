@@ -3,8 +3,10 @@ layout: base.liquid
 ---
 
 <h1>{{ pageTitle }}</h1>
+
 {{ content }}
 
+<p class="published">Posted on {{ date }}</p>
 
 <hr>
 {% include components/ctalink.liquid link: "/writing/archive", label: "View all posts" %}

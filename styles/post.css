@@ -101,6 +101,11 @@
     margin-bottom: calc(var(--text-size-large) * 2);
 }
 
+#post .published {
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
 @media screen and (max-width: 900px) {
     #post main .wide {
         width: 80%;
