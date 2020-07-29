@@ -1,6 +1,6 @@
 ---
 template: post.liquid
-pageTitle: 'Thoughts on Genderify, gender discrimination, transphobia, and ethical AI.'
+pageTitle: 'Thoughts on Genderify, gender discrimination, transphobia, and (un)ethical AI.'
 date: '2020-07-29'
 categories: ['AI', 'ethics', 'technology', 'inclusive design']
 title: 'Thoughts on Genderify, gender discrimination, transphobia, and ethical AI.'
