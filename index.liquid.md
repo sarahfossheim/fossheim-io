@@ -27,11 +27,11 @@ pageTitle: "Sarah L. Fossheim"
 </p>
 
 <p>
-    Currently working as a part of the R&D department at Inspera Assessment. 
-    I am <em>not</em> looking for a new full-time job. 
+    Currently working as a Senior Technologist at Studio VUES. 
+    I am not looking for a new full-time job. 
     Available for writing, speaking and freelance opportunities at 
     <a href="mailto:sarah@fossheim.io">sarah@fossheim.io</a>.
-</p>    
+</p>
 
 <p id="location">
    📌 Located in Oslo, Norway.
