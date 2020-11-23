@@ -4,7 +4,7 @@ categories: ["a11y", "data", "design", "front-end"]
 date: "2020-11-23"
 title: "How (not) to make accessible data visualizations, illustrated by the US presidential election."
 excerpt: "Let’s take a look at some important aspects of accessible data visualizations, based on what popular news sources are doing right and wrong."
-image: "http://fossheim.io/static/img/a11y-elections-nyt-map.png"
+image: "https://fossheim.io/static/img/a11y-elections-nyt-map.png"
 ---
 
 In the days around the 2020 US presidential elections a lot of people have been following predictions, results and exit polls quite closely. The majority of news sources published plenty of visualizations, but very few of them in an accessible format.
