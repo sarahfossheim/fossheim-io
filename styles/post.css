@@ -101,6 +101,14 @@
     margin-bottom: calc(var(--text-size-large) * 2);
 }
 
+#post main .xsmall {
+    font-size: 0.55rem;
+    line-height: 0.95rem;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
 #post .published {
     font-size: 0.75rem;
     opacity: 0.75;
